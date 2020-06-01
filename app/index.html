@@ -1,26 +1,130 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="utf-8">
-	<title>Дружище</title>
-	<meta name="description" content="">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<head>
+		<meta charset="utf-8">
+		<title>Дружище</title>
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="icon" href="img/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-	
-	<!-- Custom Browsers Color Start -->
-	<meta name="theme-color" content="#000">
-	<!-- Custom Browsers Color End -->
+		<link rel="icon" href="img/favicon/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
 
-	<link rel="stylesheet" href="css/main.min.css">
+		<!-- Custom Browsers Color Start -->
+		<meta name="theme-color" content="#B5443B">
+		<!-- Custom Browsers Color End -->
 
-</head>
+		<link rel="stylesheet" href="css/main.min.css">
+		<link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
 
-<body>
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="header-wrapper d-flex justify-content-between">
+				<div class="header-left d-flex align-items-center">
+					<div class="menu-wrapper">
+						<div class="menu-toggle">
+							<i class="mdi mdi-menu"></i>
+						</div>
+					</div>
+					<a href="index.html" class="logo">
+						<img src="img/logo.svg" alt="дружище лого">
+					</a>
+					<div class="select-lang-wrapper">
+						<select class="select-lang">
+							<option value="ru">Ru</option>
+							<option value="en">En</option>
+						</select>
+					</div>
+					<div class="select-city-wrapper d-flex align-items-center">
+						<i class="mdi mdi-map-marker"></i>
+						<div class="select-col">
+							<select class="select-city">
+								<option value="">Харьков</option>
+								<option value="">Мариуполь</option>
+								<option value="">Краматорск</option>
+								<option value="">Славянск</option>
+								<option value="">Константиновка</option>
+								<option value="">Дружковка</option>
+								<option value="">Чугуев</option>
+								<option value="">Купянск</option>
+								<option value="">Купянск-узловой</option>
+								<option value="">Ковшаровка</option>
+								<option value="">Двуречная</option>
+								<option value="">Николаевка</option>
+							</select>
+							<p class="num-shops">12 магазинов</p>
+						</div>
+					</div>
+				</div>
+				<div class="header-center d-flex justify-content-center">
+					<div class="header-center-box text-right">
+						<h2 class="title is-2 text-uppercase medium-carmine bold">
+							Доставка
+						</h2>
+						<p>с 10:00 до 22:00</p>
+					</div>
+					<div class="header-center-face">
+						<img src="img/face.svg" alt="face icon">
+					</div>
+					<div class="header-center-box">
+						<div class="phones-wrapper">
+							<a href="tel: 068 893 66 96" class="title is-2 text-uppercase medium-carmine bold">
+								068 893 66 96
+							</a>
 
+							<ul class="dropdown-list">
+								<li><a href="tel:099 685 97 22">099 685 97 22</a></li>
+								<li><a href="tel:068 893 66 96">068 893 66 96</a></li>
+								<li><a href="tel:093 133 19 19">093 133 19 19</a></li>
+							</ul>
+						</div>
+						<p>Доставка и предзаказ отзывы и пожелания</p>
+					</div>
+				</div>
+				<div class="header-right d-flex justify-content-end align-items-center">
+					<a href="#" class="icon-text">
+						<i class="mdi mdi-account-circle"></i>
+						Мой кабинет
+					</a>
+					<div class="basket-wrapper">
+						<div class="basket-toggle">
+							<i class="mdi mdi-basket"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
 
-	<script src="js/scripts.min.js"></script>
-</body>
+		<main class="main-section">
+			<div class="sub-menu-wrapper">
+				<div class="inner-wrapper">
+					<ul class="sub-menu d-flex align-items-center justify-content-center">
+						<li><a href="#">О нас</a></li>
+						<li class="sublist-true">
+							Интернет - <br> магазин
+							<ul class="dropdown-list">
+								<li><a href="#">Test link</a></li>
+								<li><a href="#">Test link</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Новости <br> и акции</a></li>
+						<li><a href="#">Партнеры</a></li>
+						<li class="sublist-true">
+							Программа <br> лояльности
+							<ul class="dropdown-list">
+								<li><a href="#">Test link</a></li>
+								<li><a href="#">Test link</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Карьера</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Арендодателям</a></li>
+					</ul>
+				</div>
+			</div>
+		</main>
+
+		<script src="js/scripts.min.js"></script>
+	</body>
 </html>

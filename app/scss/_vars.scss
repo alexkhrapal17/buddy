@@ -1,9 +1,21 @@
 $default-font: "GeometriaRegular", sans-serif;
 
+// Colors
+$cod-gray: #1D1918;
+$rock: #493630;
+$medium-carmine: #B5443B;
+$medium-carmine-hover: #b2342a;
+$hurricane: #807976;
+$ripe-lemon: #F4D41C;
+$gin-fizz: #FFF9DF;
+$snow: #FFF;
+
+// Box shadow
+$shadow: 0 13px 73px rgba(0, 0, 0, 0.08) ;
+
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 30px;
 $grid-columns: 12;
 $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
-$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
 
 $gutter: $grid-gutter-width;

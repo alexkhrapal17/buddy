@@ -1,0 +1,75 @@
+.bold {
+  font-family: "GeometriaBold", sans-serif;
+}
+
+.heavy {
+  font-family: "GeometriaHeavy", sans-serif;
+}
+
+.light {
+  font-family: "GeometriaLight", sans-serif;
+}
+
+.regular {
+  font-family: "GeometriaRegular", sans-serif;
+}
+
+.title {
+  margin: 0;
+  color: $cod-gray;
+
+  &.is-1 {
+    font: 36px/45px "GeometriaHeavy", sans-serif;
+  }
+
+  &.is-2 {
+    font: 24px/30px "GeometriaBold", sans-serif;
+  }
+
+  &.is-3 {
+    font: 18px/23px "GeometriaRegular", sans-serif;
+  }
+
+  &.is-4 {
+    font: 16px/24px "GeometriaRegular", sans-serif;
+  }
+}
+
+p {
+  font: 15px/22px "GeometriaRegular", sans-serif;
+  margin: 0;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Color classes
+.cod-gray {
+  color: $cod-gray;
+}
+.rock {
+  color: $rock;
+}
+
+.medium-carmine {
+  color: $medium-carmine;
+}
+
+.hurricane {
+  color: $hurricane;
+}
+
+.ripe-lemon {
+  color: $ripe-lemon;
+}
+
+.gin-fizz {
+  color: $gin-fizz;
+}
+
+.snow {
+  color: $snow;
+}

@@ -1,14 +1,19 @@
-@import "vars";
+// Libs
+@import "../libs/bootstrap/scss/bootstrap-reboot.scss";
+@import "../libs/bootstrap/scss/bootstrap-grid.scss";
+@import "../libs/bootstrap/scss/utilities/_sizing.scss";
+@import "../libs/bootstrap/scss/utilities/_text.scss";
+@import "../libs/selectric/selectric.scss";
+
+// Main settings
 @import "fonts";
-@import "libs";
 @import "mixins-custom";
+@import "vars";
+@import "typography";
+@import "custom";
 
-body {
-	font-size: 16px;
-	min-width: 320px;
-	position: relative;
-	font-family: $default-font;
-	overflow-x: hidden;
-}
+// Components
+@import "header";
 
-@import "media"; // Always at the end
+// Pages
+

@@ -1,0 +1,155 @@
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  color: $cod-gray;
+  font-family: $default-font;
+  overflow-x: hidden;
+  height: 100000px;
+  //background: url("../img/pattern-main.jpg") repeat;
+}
+
+.inner-wrapper {
+  max-width: 1472px;
+  margin: 0 auto;
+  padding: 0 16px;
+  position: relative;
+}
+
+.main-section {
+  margin-top: 100px;
+}
+
+// Select lang
+.selectric-wrapper {
+  &.selectric-select-lang {
+    .selectric-items {
+      width: 100px !important;
+    }
+  }
+  &.selectric-select-city {
+    .selectric-items {
+      width: 230px !important;
+    }
+
+    .selectric {
+      overflow: initial;
+      height: 52px;
+      margin-bottom: -22px;
+
+      .label {
+        font-size: 15px;
+        line-height: 31px;
+        height: 30px;
+      }
+
+      .button {
+        top: 8px;
+        right: -30px;
+      }
+    }
+  }
+
+  .selectric {
+    background: none;
+    border: none;
+
+    .label {
+      font: 18px/37px "GeometriaBold", sans-serif;
+      color: $cod-gray;
+      margin: 0 20px 0 0;
+    }
+
+    .button {
+      background: none;
+      width: 20px;
+
+      &:after {
+        border-top-color: $cod-gray;
+        border-width: 5px;
+      }
+    }
+  }
+
+  .selectric-items {
+    border-radius: 0 0 8px 8px;
+    background: $ripe-lemon;
+    box-shadow: $shadow;
+    border: none;
+    left: -20px;
+
+    ul {
+      padding: 20px 0 10px;
+
+      li {
+        font-size: 16px;
+        line-height: 18px;
+        padding: 0 20px 10px;
+        text-transform: uppercase;
+        color: $rock;
+        @include transition(.2s);
+
+        &.selected, &:hover {
+          background: none;
+          color: $medium-carmine;
+        }
+      }
+    }
+  }
+}
+
+// Dropdown list
+.dropdown-list {
+  position: absolute;
+  top: 100%;
+  left: -20px;
+  padding: 20px 0 10px;
+  margin: 0;
+  list-style: none;
+  width: 200px;
+  border-radius: 0 0 8px 8px;
+  background: $ripe-lemon;
+  box-shadow: $shadow;
+  z-index: 100;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-5px);
+  @include transition(.3s);
+
+  li {
+    a {
+      display: block;
+      font: 16px/18px "GeometriaRegular", sans-serif;
+      padding: 0 20px 10px;
+      text-transform: uppercase;
+      color: $rock;
+      @include transition(.2s);
+
+      &:hover {
+        color: $medium-carmine;
+      }
+    }
+  }
+}
+
+
+.icon-text {
+  font: 15px/19px "GeometriaBold", sans-serif;
+  color: $cod-gray;
+  @include transition(.2s);
+
+  &:hover {
+    color: $medium-carmine-hover;
+  }
+
+  .mdi {
+    display: inline-block;
+    vertical-align: middle;
+    color: $medium-carmine;
+    font-size: 24px;
+    line-height: 26px;
+    margin-right: 10px;
+    margin-top: -2px;
+  }
+}
