@@ -1,0 +1,6 @@
+@import "_mixins/font-face";
+
+@include font-face("GeometriaLight", "../fonts/GeometriaLight/GeometriaLight");
+@include font-face("GeometriaRegular", "../fonts/GeometriaRegular/GeometriaRegular");
+@include font-face("GeometriaBold", "../fonts/GeometriaBold/GeometriaBold");
+@include font-face("GeometriaHeavy", "../fonts/GeometriaHeavy/GeometriaHeavy");

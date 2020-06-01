@@ -1,0 +1,14 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "mixins-custom";
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	font-family: $default-font;
+	overflow-x: hidden;
+}
+
+@import "media"; // Always at the end
