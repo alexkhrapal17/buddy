@@ -10,6 +10,10 @@
   background: $ripe-lemon;
   @include transition(.2s);
 
+  @media (max-width: $screen-md) {
+    height: 52px;
+  }
+
   &.is-hidden {
     transform: translateY(-100%);
 
@@ -27,6 +31,10 @@
 
 .select-lang-wrapper {
   margin-right: 45px;
+
+  @media (max-width: 1600px) {
+    margin-right: 20px;
+  }
 }
 
 .select-city-wrapper {
@@ -38,6 +46,14 @@
     line-height: 30px;
     margin-right: 10px;
     margin-top: -2px;
+  }
+
+  .num-shops {
+    white-space: nowrap;
+
+    @media (max-width: $screen-md) {
+      display: none;
+    }
   }
 }
 
@@ -56,6 +72,10 @@
 .header-center {
   padding: 7px 0 8px;
 
+  @media (max-width: 1300px) {
+    display: none !important;
+  }
+
   .header-center-box {
     width: 172px;
     padding-top: 4px;
@@ -71,6 +91,10 @@
 
   .header-center-face {
     margin: 0 20px;
+
+    @media (max-width: 1600px) {
+      margin: 0 5px;
+    }
   }
 }
 
@@ -96,6 +120,10 @@
   visibility: hidden;
   transform: translateX(-100%);
   @include transition(.2s);
+
+  @media (max-width: $screen-md) {
+    height: calc(100vh - 52px);
+  }
 
   &.show {
     opacity: 1;
@@ -164,31 +192,22 @@
   }
 }
 
-.social-links {
-  a {
-    display: inline-block;
-    vertical-align: middle;
-    color: $rock;
-    font-size: 30px;
-    line-height: 30px;
-    margin-right: 40px;
-    @include transition(.2s);
-
-    &:last-child {
-      margin-right: 0;
-    }
-
-    &:hover {
-      color: $medium-carmine;
-    }
-  }
-}
-
 // Basket section
 .basket-wrapper {
   position: relative;
   transform: translateX(230px);
   @include transition(.4s);
+
+  @media (max-width: $screen-md) {
+    transform: translateX(263px);
+  }
+
+  @media (max-width: $screen-sm) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
 
   &.show {
     transform: translateX(0);
@@ -221,8 +240,15 @@
   text-align: center;
   font-size: 15px;
   line-height: 83px;
+  background: $ripe-lemon;
   color: $medium-carmine;
   padding: 10px;
+
+  @media (max-width: $screen-md) {
+    width: 130px;
+    height: 52px;
+    line-height: 32px;
+  }
 }
 
 .basket-toggle {
@@ -232,6 +258,10 @@
   cursor: pointer;
   position: relative;
   @include transition(.2s);
+
+  @media (max-width: $screen-md) {
+    height: 52px;
+  }
 
   &:hover, &.active {
     background: $medium-carmine-hover;
@@ -243,6 +273,10 @@
     left: 0;
     width: 100px;
     height: 100%;
+
+    @media (max-width: $screen-md) {
+      width: 52px;
+    }
 
     .mdi {
       @include center(both);
@@ -256,12 +290,21 @@
       width: 100%;
       text-align: center;
       @include transition(.4s);
+
+      @media (max-width: $screen-md) {
+        display: none;
+      }
     }
 
     .counter-num {
       position: absolute;
       top: 20px;
       right: 20px;
+
+      @media (max-width: $screen-md) {
+        top: 9px;
+        right: -3px;
+      }
     }
   }
 
@@ -291,6 +334,10 @@
   opacity: 0;
   visibility: hidden;
   @include transition(.2s);
+
+  @media (max-width: $screen-md) {
+    height: calc(100vh - 52px);
+  }
 
   .nav-right-slide-bottom {
     border-top: 1px solid $gray;
@@ -369,7 +416,7 @@
       padding-top: 0;
     }
 
-    .remove-product {
+    .remove-product, .add-product {
       color: $red;
       font-size: 30px;
       line-height: 32px;
@@ -438,6 +485,11 @@
   align-items: center;
   @include transition(.2s);
 
+  @media (max-width: $screen-md) {
+    width: 52px;
+    height: 52px;
+  }
+
   &:hover, &.active {
     background: $medium-carmine-hover;
   }
@@ -451,19 +503,50 @@
 .logo {
   display: block;
   margin: 0 45px 0 30px;
+
+  @media (max-width: 1600px) {
+    margin: 0 20px;
+  }
+
+  @media (max-width: $screen-md) {
+    margin: 0 10px;
+  }
+
+  .logo-desktop {
+    @media (max-width: $screen-md) {
+      display: none;
+    }
+  }
+
+  .logo-mobile {
+    display: none;
+
+    @media (max-width: $screen-md) {
+      display: block;
+      width: 32px;
+    }
+  }
 }
 
 .header-right {
   .icon-text {
-    margin-right: 30px;
-    transform: translateX(230px);
+    @include center(vertical);
+    right: 130px;
     @include transition(.4s);
+
+    @media (max-width: $screen-md) {
+      display: none;
+    }
   }
 }
 
 .sub-menu-wrapper {
   padding: 10px 0;
   background: $gin-fizz;
+
+  @media (max-width: $screen-md) {
+    display: none;
+  }
 
   ul {
     margin: 0;

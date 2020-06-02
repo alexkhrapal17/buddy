@@ -5,7 +5,10 @@ body {
   color: $cod-gray;
   font-family: $default-font;
   overflow-x: hidden;
-  height: 100000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
   //background: url("../img/pattern-main.jpg") repeat;
 }
 
@@ -30,10 +33,41 @@ input[type="number"] {
 
 .main-section {
   margin-top: 100px;
+  flex: 1;
+
+  @media (max-width: $screen-md) {
+    margin-top: 52px;
+  }
 }
 
 * {
   outline: none !important;
+}
+
+.social-links {
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    color: $rock;
+    font-size: 30px;
+    line-height: 30px;
+    margin-right: 40px;
+    @include transition(.2s);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: $medium-carmine;
+    }
+  }
+}
+
+.hide-mobile {
+  @media (max-width: $screen-sm) {
+    display: none !important;
+  }
 }
 
 // Keyframes
@@ -63,18 +97,27 @@ input[type="number"] {
 
     .selectric {
       overflow: initial;
-      height: 52px;
-      margin-bottom: -22px;
+
+
+      @media (min-width: $screen-md) {
+        height: 52px;
+        margin-bottom: -22px;
+      }
 
       .label {
         font-size: 15px;
-        line-height: 31px;
-        height: 30px;
+
+        @media (min-width: $screen-md) {
+          height: 30px;
+          line-height: 31px;
+        }
       }
 
       .button {
-        top: 8px;
-        right: -30px;
+        @media (min-width: $screen-md) {
+          top: 8px;
+          right: -30px;
+        }
       }
     }
   }
