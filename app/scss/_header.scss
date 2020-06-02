@@ -12,6 +12,10 @@
 
   &.is-hidden {
     transform: translateY(-100%);
+
+    .main-nav, .nav-right-slide {
+      height: 100vh;
+    }
   }
 }
 
@@ -70,11 +74,360 @@
   }
 }
 
+// Main nav
 .menu-wrapper {
-
+  position: relative;
 }
 
-.menu-toggle, .basket-toggle {
+.main-nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 330px;
+  height: calc(100vh - 100px);
+  background: $snow;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: $shadow;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-100%);
+  @include transition(.2s);
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }
+}
+
+.main-nav-menu {
+  padding: 10px 0;
+  border-bottom: 1px solid $hurricane;
+
+  .main-nav-item {
+    display: block;
+    padding: 10px 20px;
+    font: 15px/19px "GeometriaBold", sans-serif;
+    color: $rock;
+    @include transition(.2s);
+
+    &:hover, &.active {
+      color: $medium-carmine;
+    }
+  }
+}
+
+.main-nav-submenu {
+  padding: 10px 0;
+
+  .main-nav-subitem {
+    display: block;
+    font-size: 15px;
+    line-height: 30px;
+    color: $rock;
+    padding: 5px 20px;
+    @include transition(.2s);
+
+    &:hover, &.active {
+      color: $medium-carmine;
+    }
+  }
+}
+
+.main-nav-bottom {
+  padding: 20px;
+
+  .main-nav-title {
+    margin-bottom: 12px;
+  }
+}
+
+.main-nav-bottom-list {
+  padding: 0;
+  margin: 0 0 20px;
+  list-style: none;
+
+  li a {
+    display: block;
+    font-size: 15px;
+    line-height: 30px;
+    color: $rock;
+    @include transition(.2s);
+
+    &:hover {
+      color: $medium-carmine;
+    }
+  }
+}
+
+.social-links {
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    color: $rock;
+    font-size: 30px;
+    line-height: 30px;
+    margin-right: 40px;
+    @include transition(.2s);
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: $medium-carmine;
+    }
+  }
+}
+
+// Basket section
+.basket-wrapper {
+  position: relative;
+  transform: translateX(230px);
+  @include transition(.4s);
+
+  &.show {
+    transform: translateX(0);
+
+    .nav-right-slide {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .basket-toggle {
+      .cost-open {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .basket-icon {
+        .cost-close {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+    }
+  }
+}
+
+.order-button {
+  width: 130px;
+  height: 100px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  line-height: 83px;
+  color: $medium-carmine;
+  padding: 10px;
+}
+
+.basket-toggle {
+  width: 200px;
+  height: 100px;
+  background: $medium-carmine;
+  cursor: pointer;
+  position: relative;
+  @include transition(.2s);
+
+  &:hover, &.active {
+    background: $medium-carmine-hover;
+  }
+
+  .basket-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+
+    .mdi {
+      @include center(both);
+      color: $snow;
+      font-size: 30px;
+    }
+
+    .cost-close {
+      @include center(horizontal);
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
+      @include transition(.4s);
+    }
+
+    .counter-num {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+
+  .cost-open {
+    position: absolute;
+    @include center(vertical);
+    right: 30px;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(.4s);
+  }
+}
+
+.nav-right-slide {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 330px;
+  height: calc(100vh - 100px);
+  background: $snow;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: $shadow;
+  overflow-y: auto;
+  opacity: 0;
+  visibility: hidden;
+  @include transition(.2s);
+
+  .nav-right-slide-bottom {
+    border-top: 1px solid $gray;
+    padding: 20px;
+
+    .right-slide-bottom-row {
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.basket-product {
+  padding: 20px;
+  background: $snow;
+  border-bottom: 1px solid $gray;
+  @include transition(.2s);
+
+  &:hover, &.selected {
+    background: $gin-fizz;
+  }
+
+  .product-text {
+    display: block;
+    flex: 1;
+    font-size: 15px;
+    line-height: 19px;
+    padding-top: 10px;
+  }
+
+  .basket-product-heading {
+    margin-bottom: 20px;
+
+    .basket-product-img {
+      width: 50px;
+      margin-right: 20px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .basket-product-body {
+    margin-bottom: 20px;
+
+    .basket-product-icon {
+      width: 12px;
+      margin-right: 18px;
+
+      img, svg {
+        max-width: 100%;
+      }
+    }
+
+    .basket-product-info {
+      flex: 1;
+
+      .product-text {
+        padding-top: 5px;
+
+        &:first-child {
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
+
+.basket-product-footer {
+  .price {
+    .product-text {
+      padding-top: 0;
+    }
+
+    .remove-product {
+      color: $red;
+      font-size: 30px;
+      line-height: 32px;
+      margin-left: 10px;
+    }
+  }
+}
+
+.quantity-block {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  button {
+    background: none;
+    padding: 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 23px;
+    line-height: 23px;
+  }
+
+  .quantity-num {
+    display: block;
+    width: 50px;
+    height: 23px;
+    border: none;
+    outline: none;
+    background: none;
+    text-align: center;
+    font: 15px/19px "GeometriaBold", sans-serif;
+    color: $medium-carmine;
+  }
+}
+
+.additional-products {
+  padding: 20px 0;
+}
+
+.add-button {
+  text-align: center;
+  font-size: 23px;
+  line-height: 23px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  @include transition(.2s);
+
+  &:hover {
+    color: $medium-carmine;
+  }
+}
+
+.add-title {
+  margin-bottom: 20px;
+}
+
+.menu-toggle {
   width: 100px;
   height: 100px;
   background: $medium-carmine;
@@ -85,7 +438,7 @@
   align-items: center;
   @include transition(.2s);
 
-  &:hover {
+  &:hover, &.active {
     background: $medium-carmine-hover;
   }
 
@@ -103,6 +456,8 @@
 .header-right {
   .icon-text {
     margin-right: 30px;
+    transform: translateX(230px);
+    @include transition(.4s);
   }
 }
 

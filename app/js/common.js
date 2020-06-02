@@ -95,4 +95,45 @@ $(function() {
     $('.select-city').selectric({
         maxHeight: 400
     });
+
+    // Header actions
+    $('.menu-toggle').on('click', function (e) {
+       e.preventDefault();
+       $(this).toggleClass('active');
+       $('.main-nav').toggleClass('show');
+    });
+
+    $('.basket-wrapper').on('mouseenter', function () {
+        $(this).addClass('show');
+    });
+
+    $('.basket-wrapper').on('mouseleave', function () {
+        $(this).removeClass('show');
+    });
+
+
+    // Input counter
+    $('.quantity-arrow-minus').click(function () {
+        let $input = $(this).parent().find('input');
+        var count = parseFloat($input.val()) - 0.5;
+        count = count < 0.5 ? 0.5 : count;
+        $input.val(count.toFixed(1) + 'Л');
+        $input.change();
+        return false;
+    });
+    $('.quantity-arrow-plus').click(function () {
+        let $input = $(this).parent().find('input');
+        $input.val((parseFloat($input.val()) + 0.5).toFixed(1) + 'Л');
+        $input.change();
+        return false;
+    });
+
+    // Sliders init
+    var addProductsSlider = new Swiper ('.additional-products-slider', {
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-arrow-next',
+            prevEl: '.swiper-arrow-prev',
+        },
+    })
 });

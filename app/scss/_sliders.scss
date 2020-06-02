@@ -1,0 +1,59 @@
+// Arrows slider
+.swiper-arrow-prev, .swiper-arrow-next {
+  font-size: 30px;
+  line-height: 32px;
+  position: absolute;
+  z-index: 10;
+  cursor: pointer;
+  color: $hurricane;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  @include transition(.2s);
+
+  &:hover {
+    animation: pulse 2s infinite;
+    color: $medium-carmine;
+  }
+}
+
+// Additional slider header right slide
+.additional-products-slider {
+  overflow: hidden;
+  position: relative;
+
+  .swiper-arrow-prev, .swiper-arrow-next {
+    top: 35px;
+  }
+
+  .swiper-arrow-prev {
+    left: 15px;
+  }
+
+  .swiper-arrow-next {
+    right: 15px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+
+    .add-slider-wrap {
+      padding: 0 20px;
+
+      .add-img-wrap {
+        width: 100px;
+        margin: 0 auto 20px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      > .product-text {
+        display: block;
+        padding-top: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

@@ -16,6 +16,7 @@
 
 		<link rel="stylesheet" href="css/main.min.css">
 		<link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 
 	</head>
 	<body>
@@ -26,6 +27,49 @@
 						<div class="menu-toggle">
 							<i class="mdi mdi-menu"></i>
 						</div>
+
+						<nav class="main-nav">
+							<div class="main-nav-top">
+								<div class="main-nav-menu">
+									<a href="#" class="main-nav-item">О нас</a>
+									<a href="#" class="main-nav-item">Интернет - магазин</a>
+									<a href="#" class="main-nav-item">Новости и акции</a>
+									<a href="#" class="main-nav-item">Партнеры</a>
+									<a href="#" class="main-nav-item">Программа лояльности</a>
+									<a href="#" class="main-nav-item">Контакты</a>
+								</div>
+								<div class="main-nav-submenu">
+									<a href="#" class="main-nav-subitem">Что такое живое пиво?</a>
+									<a href="#" class="main-nav-subitem">Что такое живое вино?</a>
+									<a href="#" class="main-nav-subitem">Карьера</a>
+									<a href="#" class="main-nav-subitem">Вакансии</a>
+									<a href="#" class="main-nav-subitem">Информация о доставке</a>
+									<a href="#" class="main-nav-subitem">Бонусная программа</a>
+									<a href="#" class="main-nav-subitem">Арендодателям</a>
+									<a href="#" class="main-nav-subitem">Жалобы и предложения</a>
+								</div>
+							</div>
+
+							<div class="main-nav-bottom">
+								<div class="main-nav-title">
+									<h3 class="title is-3 medium-carmine bold">Телефоны для заказов:</h3>
+								</div>
+
+								<ul class="main-nav-bottom-list">
+									<li><a href="tel:">099 685 97 22</a></li>
+									<li><a href="tel:068 893 66 96">068 893 66 96</a></li>
+									<li><a href="tel:093 133 19 19">093 133 19 19</a></li>
+									<li><a href="mailto:Marketing.druzhishe@gmail.com">Marketing.druzhishe@gmail.com</a></li>
+								</ul>
+
+								<div class="social-links">
+									<a href="#"><i class="mdi mdi-facebook"></i></a>
+									<a href="#"><i class="mdi mdi-youtube"></i></a>
+									<a href="#"><i class="mdi mdi-instagram"></i></a>
+									<a href="#"><i class="mdi mdi-telegram"></i></a>
+								</div>
+							</div>
+						</nav>
 					</div>
 					<a href="index.html" class="logo">
 						<img src="img/logo.svg" alt="дружище лого">
@@ -87,9 +131,194 @@
 						<i class="mdi mdi-account-circle"></i>
 						Мой кабинет
 					</a>
-					<div class="basket-wrapper">
+					<div class="basket-wrapper d-flex">
 						<div class="basket-toggle">
-							<i class="mdi mdi-basket"></i>
+							<div class="basket-icon">
+								<i class="mdi mdi-basket"></i>
+								<p class="cost-close snow bold">182.97 грн</p>
+								<div class="counter-num">
+									<h3 class="title is-3 bold ripe-lemon">3</h3>
+								</div>
+							</div>
+
+							<p class="cost-open snow bold">182.97 грн</p>
+						</div>
+						<div class="order-button bold">Заказать</div>
+
+						<div class="nav-right-slide">
+							<div class="nav-right-slide-top">
+								<div class="basket-products-list">
+									<div class="basket-product">
+										<div class="basket-product-heading d-flex">
+											<div class="basket-product-img">
+												<img src="img/img1.png" alt="">
+											</div>
+											<span class="product-text bold rock text-uppercase">
+												FDB LEGENDARY STARS «ANDY WARHOL»
+											</span>
+										</div>
+										<div class="basket-product-body d-flex">
+											<div class="basket-product-icon">
+												<img src="img/bottle.svg" alt="">
+											</div>
+											<div class="basket-product-info">
+												<span class="product-text bold rock">
+													Бутылка, <span class="medium-carmine">1</span> л <span class="medium-carmine">2</span> шт
+												</span>
+												<span class="product-text bold rock">
+													Бутылка, <span class="medium-carmine">0.5</span> л <span class="medium-carmine">2</span> шт
+												</span>
+											</div>
+										</div>
+										<div class="basket-product-footer d-flex align-items-center justify-content-between">
+											<div class="quantity-block">
+												<button class="quantity-arrow-minus">
+													<i class="mdi mdi-minus"></i>
+												</button>
+												<input class="quantity-num" type="text" value="1.0Л"/>
+												<button class="quantity-arrow-plus">
+													<i class="mdi mdi-plus"></i>
+												</button>
+											</div>
+
+											<div class="price d-flex align-items-center">
+												<span class="product-text bold rock">182.97 грн</span>
+												<a href="#" class="remove-product">
+													<i class="mdi mdi-close"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="basket-product">
+										<div class="basket-product-heading d-flex">
+											<div class="basket-product-img">
+												<img src="img/img2.png" alt="">
+											</div>
+											<span class="product-text bold rock text-uppercase">
+												Пинта Московско-Баварское
+											</span>
+										</div>
+										<div class="basket-product-body d-flex">
+											<div class="basket-product-icon">
+												<img src="img/bottle.svg" alt="">
+											</div>
+											<div class="basket-product-info">
+												<span class="product-text bold rock">
+													Бутылка, <span class="medium-carmine">0.5</span> л <span class="medium-carmine">1</span> шт
+												</span>
+												<span class="product-text bold rock">
+													Бутылка, <span class="medium-carmine">0.5</span> л <span class="medium-carmine">1</span> шт
+												</span>
+											</div>
+										</div>
+										<div class="basket-product-footer d-flex align-items-center justify-content-between">
+											<div class="quantity-block">
+												<button class="quantity-arrow-minus">
+													<i class="mdi mdi-minus"></i>
+												</button>
+												<input class="quantity-num" type="text" value="1.0Л"/>
+												<button class="quantity-arrow-plus">
+													<i class="mdi mdi-plus"></i>
+												</button>
+											</div>
+
+											<div class="price d-flex align-items-center">
+												<span class="product-text bold rock">39.99 грн</span>
+												<a href="#" class="remove-product">
+													<i class="mdi mdi-close"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="additional-products">
+									<div class="add-button">
+										<i class="mdi mdi-plus"></i>
+									</div>
+
+									<h3 class="title is-3 bold medium-carmine text-center add-title">
+										Вкуснее вместе
+									</h3>
+
+									<div class="additional-products-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="add-slider-wrap">
+													<div class="add-img-wrap">
+														<img src="img/add-img1.png" alt="">
+													</div>
+													<span class="product-text bold rock">
+														Янтарная с перцем
+													</span>
+													<div class="basket-product-footer d-flex align-items-center justify-content-between">
+														<div class="quantity-block">
+															<button class="quantity-arrow-minus">
+																<i class="mdi mdi-minus"></i>
+															</button>
+															<input class="quantity-num" type="text" value="1.0Л"/>
+															<button class="quantity-arrow-plus">
+																<i class="mdi mdi-plus"></i>
+															</button>
+														</div>
+
+														<div class="price d-flex align-items-center">
+															<span class="product-text bold rock">182.97 грн</span>
+															<a href="#" class="remove-product">
+																<i class="mdi mdi-close"></i>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="add-slider-wrap">
+													<div class="add-img-wrap">
+														<img src="img/add-img1.png" alt="">
+													</div>
+													<span class="product-text bold rock">
+														Янтарная с перцем
+													</span>
+													<div class="basket-product-footer d-flex align-items-center justify-content-between">
+														<div class="quantity-block">
+															<button class="quantity-arrow-minus">
+																<i class="mdi mdi-minus"></i>
+															</button>
+															<input class="quantity-num" type="text" value="1.0Л"/>
+															<button class="quantity-arrow-plus">
+																<i class="mdi mdi-plus"></i>
+															</button>
+														</div>
+
+														<div class="price d-flex align-items-center">
+															<span class="product-text bold rock">182.97 грн</span>
+															<a href="#" class="remove-product">
+																<i class="mdi mdi-close"></i>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="swiper-arrow-prev"><i class="mdi mdi-arrow-left"></i></div>
+										<div class="swiper-arrow-next"><i class="mdi mdi-arrow-right"></i></div>
+									</div>
+								</div>
+							</div>
+							<div class="nav-right-slide-bottom">
+								<div class="d-flex justify-content-between right-slide-bottom-row">
+									<h3 class="title is-3 bold rock">Товары</h3>
+									<h4 class="title is-4 rock">182.97 грн</h4>
+								</div>
+								<div class="d-flex justify-content-between right-slide-bottom-row">
+									<h3 class="title is-3 bold rock">Скидка</h3>
+									<h4 class="title is-4 rock">-10.50грн</h4>
+								</div>
+								<div class="d-flex justify-content-between right-slide-bottom-row">
+									<h3 class="title is-3 bold rock">К оплате</h3>
+									<h3 class="title is-3 bold medium-carmine text-uppercase">182.97 грн</h3>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -126,5 +355,6 @@
 		</main>
 
 		<script src="js/scripts.min.js"></script>
+		<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 	</body>
 </html>
