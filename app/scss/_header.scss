@@ -24,6 +24,8 @@
 }
 
 .header-wrapper {
+  height: 100%;
+
   > div {
     flex: 1;
   }
@@ -35,9 +37,28 @@
   @media (max-width: 1600px) {
     margin-right: 20px;
   }
+
+  @media (max-width: $screen-sm) {
+    margin-right: 0;
+    padding-top: 5px;
+  }
+}
+
+.select-col {
+  @media (max-width: $screen-sm) {
+    width: 130px;
+  }
+
+  @media (max-width: 374px) {
+    width: 100px;
+  }
 }
 
 .select-city-wrapper {
+  @media (max-width: $screen-sm) {
+    padding-top: 5px;
+  }
+
   .mdi {
     display: inline-block;
     vertical-align: middle;
@@ -46,6 +67,10 @@
     line-height: 30px;
     margin-right: 10px;
     margin-top: -2px;
+
+    @media (max-width: $screen-sm) {
+      margin-right: 0;
+    }
   }
 
   .num-shops {
@@ -99,6 +124,16 @@
 }
 
 // Main nav
+.toggle-mask, .toggle-mask2, .toggle-mask3 {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 10000px;
+  height: 100vh;
+  z-index: 1;
+}
+
 .menu-wrapper {
   position: relative;
 }
@@ -123,6 +158,10 @@
 
   @media (max-width: $screen-md) {
     height: calc(100vh - 52px);
+  }
+
+  @media (max-width: 374px) {
+    width: 280px;
   }
 
   &.show {
@@ -195,6 +234,7 @@
 // Basket section
 .basket-wrapper {
   position: relative;
+  z-index: 3;
   transform: translateX(230px);
   @include transition(.4s);
 
@@ -207,6 +247,10 @@
     top: 0;
     right: 0;
     z-index: 10;
+  }
+
+  @media (max-width: 374px) {
+    transform: translateX(220px);
   }
 
   &.show {
@@ -249,6 +293,10 @@
     height: 52px;
     line-height: 32px;
   }
+
+  @media (max-width: 374px) {
+    width: 90px;
+  }
 }
 
 .basket-toggle {
@@ -261,6 +309,10 @@
 
   @media (max-width: $screen-md) {
     height: 52px;
+  }
+
+  @media (max-width: 374px) {
+    width: 190px;
   }
 
   &:hover, &.active {
@@ -335,8 +387,22 @@
   visibility: hidden;
   @include transition(.2s);
 
+  &.nav-right-slide-click {
+    transform: translateX(100%);
+
+    &.open {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
   @media (max-width: $screen-md) {
     height: calc(100vh - 52px);
+  }
+
+  @media (max-width: 374px) {
+    width: 280px;
   }
 
   .nav-right-slide-bottom {
@@ -530,11 +596,35 @@
 
 .header-right {
   .icon-text {
-    @include center(vertical);
-    right: 130px;
     @include transition(.4s);
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
 
-    @media (max-width: $screen-md) {
+    &.login-link {
+      margin-right: 35px;
+
+      @media (max-width: $screen-sm) {
+        padding-top: 5px;
+        margin-right: 10px;
+      }
+    }
+
+    &.acc-link {
+      @include center(vertical);
+      right: 130px;
+
+      @media (max-width: $screen-md) {
+        display: none;
+      }
+    }
+  }
+
+  .login-hint-text {
+    max-width: 200px;
+    margin-right: 38px;
+
+    @media (max-width: $screen-sm) {
       display: none;
     }
   }
@@ -566,10 +656,24 @@
     color: $rock;
     cursor: pointer;
 
+    @media (max-width: 1600px) {
+      margin: 0 25px;
+    }
+
+    @media (max-width: $screen-lg) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
     > a {
       font: 18px/20px "GeometriaBold", sans-serif;
       color: $rock;
       @include transition(.2s);
+
+      @media (max-width: $screen-lg) {
+        font-size: 14px;
+        line-height: 16px;
+      }
 
       &:hover {
         color: $medium-carmine-hover;
@@ -604,6 +708,29 @@
           transform: translateY(0);
         }
       }
+    }
+  }
+}
+
+// Login form header
+.login-form-wrapper {
+  padding: 40px 30px;
+
+  .login-form-title {
+    margin-bottom: 40px;
+  }
+}
+
+.social-auth {
+  .auth-link {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 12px;
+    will-change: transform;
+    @include transition(.2s);
+
+    &:hover {
+      transform: scale(1.1);
     }
   }
 }

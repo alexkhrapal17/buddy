@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-size: 16px;
   min-width: 320px;
@@ -9,7 +13,23 @@ body {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
-  //background: url("../img/pattern-main.jpg") repeat;
+  background: url("../img/pattern-main.png") repeat;
+}
+
+.links {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: $medium-carmine-hover;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: $shadow;
+
+  a {
+    color: $snow;
+    font-weight: bold;
+  }
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -42,6 +62,79 @@ input[type="number"] {
 
 * {
   outline: none !important;
+}
+
+// custom dividers
+.mt-10 { margin-top: 10px }
+.mr-10 { margin-right: 10px }
+.mb-10 { margin-bottom: 10px }
+.ml-10 { margin-left: 10px }
+
+.mt-20 { margin-top: 20px }
+.mr-20 { margin-right: 20px }
+.mb-20 { margin-bottom: 20px }
+.ml-20 { margin-left: 20px }
+
+.mt-25 { margin-top: 25px }
+.mr-25 { margin-right: 25px }
+.mb-25 { margin-bottom: 25px }
+.ml-25 { margin-left: 25px }
+
+.mt-30 { margin-top: 30px }
+.mr-30 { margin-right: 30px }
+.mb-30 { margin-bottom: 30px }
+.ml-30 { margin-left: 30px }
+
+.mt-40 { margin-top: 40px }
+.mr-40 { margin-right: 40px }
+.mb-40 { margin-bottom: 40px }
+.ml-40 { margin-left: 40px }
+
+.mt-55 { margin-top: 55px }
+.mr-55 { margin-right: 55px }
+.mb-55 { margin-bottom: 55px }
+.ml-55 { margin-left: 55px }
+
+.reset-position {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  bottom: auto !important;
+  right: auto !important;
+  transform: none !important;
+}
+
+.arrow-link {
+  font: 18px/18px "GeometriaBold", sans-serif;
+  color: $rock;
+  @include transition(.2s);
+
+  &:hover {
+    color: $medium-carmine;
+  }
+
+  &.arrow-right {
+    .mdi {
+      margin-left: 5px;
+    }
+  }
+
+  &.arrow-left {
+    .mdi {
+      margin-right: 5px;
+    }
+  }
+
+  .mdi {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    font-size: 25px;
+    line-height: 25px;
+    color: $rock;
+    @include transition(.2s);
+  }
 }
 
 .social-links {
@@ -209,6 +302,7 @@ input[type="number"] {
 .icon-text {
   font: 15px/19px "GeometriaBold", sans-serif;
   color: $cod-gray;
+  user-select: none;
   @include transition(.2s);
 
   &:hover {
@@ -223,5 +317,146 @@ input[type="number"] {
     line-height: 26px;
     margin-right: 10px;
     margin-top: -2px;
+  }
+}
+
+// Input styles
+.input-material {
+  position: relative;
+  margin-bottom: 30px;
+
+  input, textarea {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background: none;
+    resize: none;
+    padding: 10px 0;
+    border-bottom: 1px solid $rock;
+
+    &.active, &:focus {
+      + .input-label {
+        transform: translate(0, -20px);
+      }
+    }
+
+    &.error {
+      border-color: $red;
+    }
+  }
+
+  .input-label {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    font: 15px/19px "GeometriaBold", sans-serif;
+    color: $rock;
+    transform: translate(10px, 0);
+    cursor: pointer;
+    @include transition(.2s);
+  }
+}
+
+.link-underline {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 22px;
+  color: $medium-carmine;
+  text-decoration: underline;
+
+  &:hover {
+    color: $medium-carmine;
+    text-decoration: none;
+  }
+}
+
+// Buttons
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border:  2px solid $medium-carmine ;
+  padding: 15px;
+  border-radius: 8px;
+  min-width: 215px;
+  min-height: 60px;
+  text-align: center;
+  font: 18px/18px "GeometriaBold", sans-serif;
+  cursor: pointer;
+  @include transition(.2s);
+
+  &:active {
+    transform: scale(.98);
+  }
+
+  .mdi, img {
+    margin-right: 30px;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  &.stretched {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  &.btn-primary {
+    background: $medium-carmine;
+    color: $snow;
+
+    &:hover {
+      background: $medium-carmine-hover;
+      border-color: $medium-carmine-hover;
+    }
+  }
+
+  &.btn-invert {
+    background: transparent;
+    color: $medium-carmine-hover;
+
+    &:hover {
+      color: $snow;
+      background: $medium-carmine-hover;
+      border-color: $medium-carmine-hover;
+    }
+  }
+
+  &.btn-disable {
+    background: $hurricane;
+    border-color: $hurricane;
+    color: $snow;
+
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+
+  &.btn-cta {
+    background: $ripe-lemon;
+    border-color: $ripe-lemon;
+    color: $medium-carmine-hover;
+
+    &:hover {
+      color: $snow;
+      background: $medium-carmine-hover;
+      border-color: $medium-carmine-hover;
+    }
+  }
+}
+
+.buy-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  .btn {
+    min-height: 50px;
+    width: 150px;
+    min-width: initial;
+    border-radius: 8px 0 8px 0;
   }
 }

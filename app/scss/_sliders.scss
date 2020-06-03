@@ -57,3 +57,139 @@
     }
   }
 }
+
+// Hero slider
+.hero-slider {
+  width: 100%;
+  position: relative;
+  margin-bottom: 175px;
+
+  .swiper-wrapper {
+    .swiper-slide {
+      min-height: 687px;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+
+  .swiper-pagination-bullets {
+    bottom: -90px !important;
+
+    .swiper-pagination-bullet {
+      margin: 0 15px;
+      width: 60px;
+      height: 60px;
+      opacity: 1;
+      background-size: contain;
+      will-change: background;
+      background: url("../img/hero-slider-bullet.svg") no-repeat 50% 50%;
+      @include transition(.2s);
+
+      &.swiper-pagination-bullet-active {
+        background-image: url("../img/hero-slider-bullet-fiiled.svg");
+      }
+    }
+  }
+}
+
+// Popular products slider
+.popular-products-slider {
+  overflow: hidden;
+  padding: 60px 0 100px;
+
+  .swiper-arrow-prev, .swiper-arrow-next {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .swiper-arrow-prev {
+    left: -30px;
+  }
+
+  .swiper-arrow-next {
+    right: -30px;
+  }
+
+  .swiper-slide {
+    @include transition(.5s);
+
+    &.swiper-slide-active {
+      width: 300px !important;
+
+      .popular-product-card {
+        .popular-product-img {
+          transform: translateX(-30px) scale(.7);
+        }
+      }
+    }
+
+    &.swiper-slide-next {
+      width: 580px !important;
+
+      .popular-product-card {
+        background: $gin-fizz;
+        box-shadow: $shadow;
+
+        .popular-product-img {
+          transform: translateX(0);
+        }
+
+        .popular-product-info {
+          width: 312px;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      + .swiper-slide {
+        width: 300px !important;
+
+        + .swiper-slide {
+          width: 300px !important;
+        }
+      }
+    }
+
+    .popular-product-card {
+      border-radius: 8px;
+      @include transition(.3s);
+
+      .popular-product-img {
+        width: 268px;
+        transform: translateX(30px) scale(.7);
+        height: 300px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px;
+        @include transition(.5s);
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .popular-product-info {
+        padding: 30px 40px 72px 0;
+        height: 300px;
+        width: 312px;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        visibility: hidden;
+        @include transition(.5s);
+      }
+    }
+  }
+}

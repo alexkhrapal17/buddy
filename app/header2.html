@@ -23,7 +23,7 @@
 		<header class="main-header">
 			<div class="header-wrapper d-flex justify-content-between">
 				<div class="header-left d-flex align-items-center">
-					<div class="menu-wrapper">
+					<!--<div class="menu-wrapper">
 						<div class="menu-toggle">
 							<i class="mdi mdi-menu"></i>
 						</div>
@@ -72,7 +72,7 @@
 						</nav>
 
 						<div class="toggle-mask"></div>
-					</div>
+					</div>-->
 					<a href="index.html" class="logo">
 						<img src="img/logo.svg" class="logo-desktop" alt="дружище лого">
 						<img src="img/face.svg" class="logo-mobile" alt="дружище лого">
@@ -83,7 +83,7 @@
 							<option value="en">En</option>
 						</select>
 					</div>
-					<div class="select-city-wrapper d-flex align-items-center">
+					<!--<div class="select-city-wrapper d-flex align-items-center">
 						<i class="mdi mdi-map-marker"></i>
 						<div class="select-col">
 							<select class="select-city">
@@ -102,9 +102,9 @@
 							</select>
 							<p class="num-shops">12 магазинов</p>
 						</div>
-					</div>
+					</div>-->
 				</div>
-				<div class="header-center d-flex justify-content-center">
+				<!--<div class="header-center d-flex justify-content-center">
 					<div class="header-center-box text-right">
 						<h2 class="title is-2 text-uppercase medium-carmine bold">
 							Доставка
@@ -128,9 +128,9 @@
 						</div>
 						<p>Доставка и предзаказ отзывы и пожелания</p>
 					</div>
-				</div>
+				</div>-->
 				<div class="header-right d-flex justify-content-end align-items-center">
-					<a href="#" class="icon-text acc-link">
+					<!--<a href="#" class="icon-text">
 						<i class="mdi mdi-account-circle"></i>
 						Мой кабинет
 					</a>
@@ -325,13 +325,62 @@
 						</div>
 
 						<div class="toggle-mask2"></div>
+					</div>-->
+
+					<!-- TODO: Above sections show only after login -->
+					<p class="login-hint-text text-right">
+						<span class="medium-carmine">Войдите на сайт</span>, чтобы получить бонусы
+					</p>
+					<div class="icon-text login-link">
+						<i class="mdi mdi-account-circle"></i>
+						Войти
 					</div>
+					<div class="nav-right-slide nav-right-slide-click">
+						<div class="login-form-wrapper">
+							<h2 class="login-form-title title is-2 bold medium-carmine text-uppercase">
+								Вход в магазин
+							</h2>
+							<form class="mb-30">
+								<div class="input-material">
+									<input type="email" id="email">
+									<label for="email" class="input-label">Эл. почта или номер карты</label>
+								</div>
+								<div class="input-material">
+									<input type="password" id="password">
+									<label for="password" class="input-label">Пароль</label>
+								</div>
+								<!--<div class="input-material autoheight">
+									<textarea id="message"></textarea>
+									<label for="message" class="input-label">Message</label>
+								</div>-->
+
+								<a href="#" class="link-underline mb-30">Напомнить пароль</a>
+
+								<button class="btn btn-primary stretched">Войти</button>
+							</form>
+
+							<div class="text-center">
+								<h4 class="title is-4 mb-10">Вход как пользователь</h4>
+								<div class="social-auth mb-30">
+									<a href="#" class="auth-link">
+										<img src="img/G_icon.svg" alt="">
+									</a>
+									<a href="#" class="auth-link">
+										<img src="img/F_icon.svg" alt="">
+									</a>
+								</div>
+
+								<a href="#" class="link-underline">Зарегистрироваться</a>
+							</div>
+						</div>
+					</div>
+					<div class="toggle-mask3"></div>
 				</div>
 			</div>
 		</header>
 
 		<main class="main-section">
-			<div class="sub-menu-wrapper">
+			<!--<div class="sub-menu-wrapper">
 				<div class="inner-wrapper">
 					<ul class="sub-menu d-flex align-items-center justify-content-center">
 						<li><a href="#">О нас</a></li>
@@ -356,221 +405,7 @@
 						<li><a href="#">Арендодателям</a></li>
 					</ul>
 				</div>
-			</div>
-
-			<section class="hero-slider">
-				<div class="swiper-wrapper">
-					<div class="swiper-slide">
-						<img src="img/hero-slider.jpg" alt="">
-					</div>
-					<div class="swiper-slide">
-						<img src="img/hero-slider.jpg" alt="">
-					</div>
-					<div class="swiper-slide">
-						<img src="img/hero-slider.jpg" alt="">
-					</div>
-				</div>
-				<div class="swiper-pagination"></div>
-			</section>
-
-			<section class="popular-products">
-				<div class="inner-wrapper">
-					<h2 class="title is-2 bold text-uppercase mb-25 medium-carmine">
-						Популярные товары
-					</h2>
-
-					<!--
-						TODO: Важные моменты относительно этого слайдера:
-						1. Размеры картинок должны быть такие как сейчас 287px400
-						2. Кол-во символов в тексте тоже должно быть примерно как сейчас
-						Это необходимо для корректного отображения карточек этого слайда,
-						иначе все слетит.
-					 -->
-					<div class="popular-products-slider">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<div class="popular-product-card">
-									<div class="d-flex">
-										<div class="popular-product-img">
-											<img src="img/pop-prod1.png" alt="">
-										</div>
-										<div class="popular-product-info">
-											<h3 class="title is-3 medium-carmine text-uppercase bold mb-20">
-												ПИВО «KRONENBOURG 1664 BLANC» СВЕТЛОЕ СПЕЦИАЛЬНОЕ 4.8°
-											</h3>
-											<p>Светлое специальное пиво Kronenbourg 1664 Blanc обладает чистым солодовым вкусом с тонким ароматом цитрусовых, кориандра и сладковатым оттенком пшеницы.</p>
-											<div class="buy-btn">
-												<a href="#" class="btn btn-primary">Купить</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="popular-product-card">
-									<div class="d-flex">
-										<div class="popular-product-img">
-											<img src="img/pop-prod1.png" alt="">
-										</div>
-										<div class="popular-product-info">
-											<h3 class="title is-3 medium-carmine text-uppercase bold mb-20">
-												ПИВО «KRONENBOURG 1664 BLANC» СВЕТЛОЕ СПЕЦИАЛЬНОЕ 4.8°
-											</h3>
-											<p>Светлое специальное пиво Kronenbourg 1664 Blanc обладает чистым солодовым вкусом с тонким ароматом цитрусовых, кориандра и сладковатым оттенком пшеницы.</p>
-											<div class="buy-btn">
-												<a href="#" class="btn btn-primary">Купить</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="popular-product-card">
-									<div class="d-flex">
-										<div class="popular-product-img">
-											<img src="img/pop-prod1.png" alt="">
-										</div>
-										<div class="popular-product-info">
-											<h3 class="title is-3 medium-carmine text-uppercase bold mb-20">
-												ПИВО «KRONENBOURG 1664 BLANC» СВЕТЛОЕ СПЕЦИАЛЬНОЕ 4.8°
-											</h3>
-											<p>Светлое специальное пиво Kronenbourg 1664 Blanc обладает чистым солодовым вкусом с тонким ароматом цитрусовых, кориандра и сладковатым оттенком пшеницы.</p>
-											<div class="buy-btn">
-												<a href="#" class="btn btn-primary">Купить</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="popular-product-card">
-									<div class="d-flex">
-										<div class="popular-product-img">
-											<img src="img/pop-prod1.png" alt="">
-										</div>
-										<div class="popular-product-info">
-											<h3 class="title is-3 medium-carmine text-uppercase bold mb-20">
-												ПИВО «KRONENBOURG 1664 BLANC» СВЕТЛОЕ СПЕЦИАЛЬНОЕ 4.8°
-											</h3>
-											<p>Светлое специальное пиво Kronenbourg 1664 Blanc обладает чистым солодовым вкусом с тонким ароматом цитрусовых, кориандра и сладковатым оттенком пшеницы.</p>
-											<div class="buy-btn">
-												<a href="#" class="btn btn-primary">Купить</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="popular-product-card">
-									<div class="d-flex">
-										<div class="popular-product-img">
-											<img src="img/pop-prod1.png" alt="">
-										</div>
-										<div class="popular-product-info">
-											<h3 class="title is-3 medium-carmine text-uppercase bold mb-20">
-												ПИВО «KRONENBOURG 1664 BLANC» СВЕТЛОЕ СПЕЦИАЛЬНОЕ 4.8°
-											</h3>
-											<p>Светлое специальное пиво Kronenbourg 1664 Blanc обладает чистым солодовым вкусом с тонким ароматом цитрусовых, кориандра и сладковатым оттенком пшеницы.</p>
-											<div class="buy-btn">
-												<a href="#" class="btn btn-primary">Купить</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="popular-product-card">
-									<div class="d-flex">
-										<div class="popular-product-img">
-											<img src="img/pop-prod1.png" alt="">
-										</div>
-										<div class="popular-product-info">
-											<h3 class="title is-3 medium-carmine text-uppercase bold mb-20">
-												ПИВО «KRONENBOURG 1664 BLANC» СВЕТЛОЕ СПЕЦИАЛЬНОЕ 4.8°
-											</h3>
-											<p>Светлое специальное пиво Kronenbourg 1664 Blanc обладает чистым солодовым вкусом с тонким ароматом цитрусовых, кориандра и сладковатым оттенком пшеницы.</p>
-											<div class="buy-btn">
-												<a href="#" class="btn btn-primary">Купить</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="popular-product-card">
-									<div class="d-flex">
-										<div class="popular-product-img">
-											<img src="img/pop-prod1.png" alt="">
-										</div>
-										<div class="popular-product-info">
-											<h3 class="title is-3 medium-carmine text-uppercase bold mb-20">
-												ПИВО «KRONENBOURG 1664 BLANC» СВЕТЛОЕ СПЕЦИАЛЬНОЕ 4.8°
-											</h3>
-											<p>Светлое специальное пиво Kronenbourg 1664 Blanc обладает чистым солодовым вкусом с тонким ароматом цитрусовых, кориандра и сладковатым оттенком пшеницы.</p>
-											<div class="buy-btn">
-												<a href="#" class="btn btn-primary">Купить</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="popular-product-card">
-									<div class="d-flex">
-										<div class="popular-product-img">
-											<img src="img/pop-prod1.png" alt="">
-										</div>
-										<div class="popular-product-info">
-											<h3 class="title is-3 medium-carmine text-uppercase bold mb-20">
-												ПИВО «KRONENBOURG 1664 BLANC» СВЕТЛОЕ СПЕЦИАЛЬНОЕ 4.8°
-											</h3>
-											<p>Светлое специальное пиво Kronenbourg 1664 Blanc обладает чистым солодовым вкусом с тонким ароматом цитрусовых, кориандра и сладковатым оттенком пшеницы.</p>
-											<div class="buy-btn">
-												<a href="#" class="btn btn-primary">Купить</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="popular-product-card">
-									<div class="d-flex">
-										<div class="popular-product-img">
-											<img src="img/pop-prod1.png" alt="">
-										</div>
-										<div class="popular-product-info">
-											<h3 class="title is-3 medium-carmine text-uppercase bold mb-20">
-												ПИВО «KRONENBOURG 1664 BLANC» СВЕТЛОЕ СПЕЦИАЛЬНОЕ 4.8°
-											</h3>
-											<p>Светлое специальное пиво Kronenbourg 1664 Blanc обладает чистым солодовым вкусом с тонким ароматом цитрусовых, кориандра и сладковатым оттенком пшеницы.</p>
-											<div class="buy-btn">
-												<a href="#" class="btn btn-primary">Купить</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-arrow-prev"><i class="mdi mdi-arrow-left"></i></div>
-						<div class="swiper-arrow-next"><i class="mdi mdi-arrow-right"></i></div>
-					</div>
-				</div>
-			</section>
-
-			<section class="catalog">
-				<div class="inner-wrapper">
-					<div class="d-flex justify-content-between align-items-center mb-55">
-						<h2 class="title is-2 bold text-uppercase medium-carmine">
-							Каталог
-						</h2>
-
-						<a href="#" class="arrow-link right-arrow">
-							Весь каталог
-							<i class="mdi mdi-arrow-right"></i>
-						</a>
-					</div>
-				</div>
-			</section>
+			</div>-->
 		</main>
 
 		<footer class="main-footer">
