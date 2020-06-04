@@ -1,0 +1,28 @@
+.catalog {
+  padding-bottom: 85px;
+}
+
+.reviews-slider-wrap {
+  padding: 110px 16px 150px;
+  margin-bottom: 100px;
+  position: relative;
+  border-radius: 0 0 50% 50% / 0px 0px 50px 50px;
+  background: $rock url("../img/pattern2.png") repeat 50% 50%;
+
+  @media (max-width: $screen-xs) {
+    padding: 30px 16px 90px;
+    margin-bottom: 50px;
+  }
+}
+
+.partners-list {
+  padding: 100px 0;
+
+  @media (max-width: $screen-xs) {
+    padding: 35px 0;
+  }
+
+  .partner-item {
+    margin: 25px 50px;
+  }
+}

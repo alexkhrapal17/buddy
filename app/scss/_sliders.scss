@@ -64,9 +64,21 @@
   position: relative;
   margin-bottom: 175px;
 
+  @media (max-width: $screen-xs) {
+    margin-bottom: 65px;
+  }
+
   .swiper-wrapper {
     .swiper-slide {
       min-height: 687px;
+
+      @media (max-width: $screen-md) {
+        min-height: 400px;
+      }
+
+      @media (max-width: $screen-xs) {
+        min-height: 280px;
+      }
 
       img {
         position: absolute;
@@ -83,6 +95,10 @@
   .swiper-pagination-bullets {
     bottom: -90px !important;
 
+    @media (max-width: $screen-xs) {
+      bottom: -70px !important;
+    }
+
     .swiper-pagination-bullet {
       margin: 0 15px;
       width: 60px;
@@ -92,6 +108,11 @@
       will-change: background;
       background: url("../img/hero-slider-bullet.svg") no-repeat 50% 50%;
       @include transition(.2s);
+
+      @media (max-width: $screen-xs) {
+        transform: scale(.5);
+        margin: 0 -5px !important;
+      }
 
       &.swiper-pagination-bullet-active {
         background-image: url("../img/hero-slider-bullet-fiiled.svg");
@@ -105,34 +126,97 @@
   overflow: hidden;
   padding: 60px 0 100px;
 
+  @media (max-width: $screen-sm) {
+    //overflow: initial;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 60px 0 0;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $screen-xs) {
+    padding: 25px 0 0;
+  }
+
   .swiper-arrow-prev, .swiper-arrow-next {
     top: 50%;
     transform: translateY(-50%);
+
+    @media (max-width: $screen-sm) {
+      top: auto;
+      bottom: 15px;
+      transform: none;
+    }
   }
 
   .swiper-arrow-prev {
     left: -30px;
+
+    @media (max-width: 1600px) {
+      left: 20px;
+    }
+
+    @media (max-width: $screen-sm) {
+      left: 30px;
+    }
   }
 
   .swiper-arrow-next {
     right: -30px;
+
+    @media (max-width: 1600px) {
+      right: 20px;
+    }
+
+    @media (max-width: $screen-sm) {
+      right: auto;
+      left: 80px;
+    }
   }
 
   .swiper-slide {
     @include transition(.5s);
 
     &.swiper-slide-active {
-      width: 300px !important;
+      @media (min-width: $screen-lg) {
+        width: 270px !important;
+      }
+
+      @media (min-width: 1600px) {
+        width: 300px !important;
+      }
 
       .popular-product-card {
+        @media (max-width: $screen-lg) {
+          background: $gin-fizz;
+          box-shadow: $shadow;
+        }
+
         .popular-product-img {
           transform: translateX(-30px) scale(.7);
+
+          @media (max-width: $screen-lg) {
+            transform: translateX(0);
+          }
+        }
+
+        .popular-product-info {
+          @media (max-width: $screen-lg) {
+            width: auto;
+            flex: 1;
+            opacity: 1;
+            visibility: visible;
+            @include reset-position;
+          }
         }
       }
     }
 
     &.swiper-slide-next {
-      width: 580px !important;
+      @media (min-width: $screen-lg) {
+        width: 580px !important;
+      }
 
       .popular-product-card {
         background: $gin-fizz;
@@ -150,10 +234,30 @@
       }
 
       + .swiper-slide {
-        width: 300px !important;
+        @media (min-width: $screen-lg) {
+          width: 270px !important;
+        }
+
+        @media (min-width: 1600px) {
+          width: 300px !important;
+        }
 
         + .swiper-slide {
           width: 300px !important;
+
+          @media (min-width: $screen-lg) {
+            width: 270px !important;
+          }
+
+          @media (min-width: 1600px) {
+            width: 300px !important;
+          }
+
+          + .swiper-slide {
+            @media (min-width: $screen-lg) {
+              width: 270px !important;
+            }
+          }
         }
       }
     }
@@ -174,6 +278,13 @@
         padding: 10px;
         @include transition(.5s);
 
+        @media (max-width: $screen-sm) {
+          width: 80px;
+          height: 160px;
+          margin-top: -40px;
+          justify-content: flex-start;
+        }
+
         img {
           max-width: 100%;
         }
@@ -189,7 +300,108 @@
         top: 0;
         visibility: hidden;
         @include transition(.5s);
+
+        @media (max-width: $screen-lg) {
+          width: auto;
+          height: auto;
+          flex: 1;
+          opacity: 1;
+          visibility: visible;
+          @include reset-position;
+        }
       }
     }
   }
+}
+
+// Reviews slider
+.reviews-slider {
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 40px 0;
+
+  .swiper-pagination {
+    bottom: 70px !important;
+
+    @media (max-width: $screen-xs) {
+      bottom: 35px !important;
+    }
+
+    .swiper-pagination-bullet {
+      width: 16px;
+      height: 16px;
+      background: $gin-fizz;
+      opacity: 1;
+      margin: 0 15px !important;
+      @include transition(.3s);
+
+      &.swiper-pagination-bullet-active {
+        background: $ripe-lemon;
+      }
+    }
+  }
+}
+
+.review-author-left {
+  width: 120px;
+  margin-right: 70px;
+  text-align: center;
+  position: relative;
+
+  @media (max-width: $screen-sm) {
+    margin-right: 20px;
+  }
+
+  @media (max-width: $screen-xs) {
+    width: 180px;
+    margin: 0 auto 35px;
+  }
+
+  .review-quote {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    font-size: 60px;
+    line-height: 60px;
+    color: $medium-carmine;
+
+    @media (max-width: $screen-xs) {
+      top: -30px;
+      right: -30px;
+    }
+  }
+
+  .review-author-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+
+    @media (max-width: $screen-xs) {
+      margin: 0 auto 25px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  .review-author-social {
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      color: $snow;
+      font-size: 25px;
+      line-height: 25px;
+      margin: 0 3px;
+    }
+  }
+}
+
+.review-author-right {
+  flex: 1;
 }

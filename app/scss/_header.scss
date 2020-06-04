@@ -158,6 +158,7 @@
 
   @media (max-width: $screen-md) {
     height: calc(100vh - 52px);
+    padding-bottom: 70px;
   }
 
   @media (max-width: 374px) {
@@ -174,6 +175,10 @@
 .main-nav-menu {
   padding: 10px 0;
   border-bottom: 1px solid $hurricane;
+
+  @media (max-width: $screen-md) {
+    border-bottom: none;
+  }
 
   .main-nav-item {
     display: block;
@@ -202,6 +207,16 @@
     &:hover, &.active {
       color: $medium-carmine;
     }
+  }
+}
+
+.my-acc-mobile {
+  display: none;
+
+  @media (max-width: $screen-md) {
+    display: block;
+    padding: 20px;
+    background: $ripe-lemon;
   }
 }
 
@@ -399,6 +414,7 @@
 
   @media (max-width: $screen-md) {
     height: calc(100vh - 52px);
+    padding-bottom: 50px;
   }
 
   @media (max-width: 374px) {
