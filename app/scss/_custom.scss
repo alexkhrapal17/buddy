@@ -25,6 +25,7 @@ body {
   border-radius: 4px;
   text-align: center;
   box-shadow: $shadow;
+  z-index: 1000;
 
   a {
     color: $snow;
@@ -43,6 +44,9 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+.outer-wrapper {
+  padding: 30px 0 80px;
+}
 
 .inner-wrapper {
   max-width: 1472px;
@@ -132,6 +136,46 @@ input[type="number"] {
   bottom: auto !important;
   right: auto !important;
   transform: none !important;
+}
+
+.bread-crumbs {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $screen-sm) {
+    display: none;
+  }
+
+  .bread-crumb-link {
+    text-transform: uppercase;
+    color: $rock;
+    font: 15px/19px "GeometriaBold", sans-serif;
+    @include transition(.2s);
+
+    &:hover {
+      color: $medium-carmine;
+
+      &:after {
+        color: $rock;
+      }
+    }
+
+    &:last-child {
+      &:after {
+        display: none;
+      }
+    }
+
+    &:after {
+      content: "/";
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 5px;
+      position: relative;
+      top: -2px;
+      color: $rock;
+    }
+  }
 }
 
 .arrow-link {

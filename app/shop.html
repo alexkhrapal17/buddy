@@ -23,7 +23,7 @@
 		<header class="main-header">
 			<div class="header-wrapper d-flex justify-content-between">
 				<div class="header-left d-flex align-items-center">
-					<!--<div class="menu-wrapper">
+					<div class="menu-wrapper">
 						<div class="menu-toggle">
 							<i class="mdi mdi-menu"></i>
 						</div>
@@ -32,12 +32,18 @@
 							<div class="main-nav-top">
 								<div class="main-nav-menu">
 									<a href="#" class="main-nav-item">О нас</a>
-									<a href="#" class="main-nav-item">Интернет - магазин</a>
+									<a href="shop.html" class="main-nav-item">Интернет - магазин</a>
 									<a href="#" class="main-nav-item">Новости и акции</a>
 									<a href="#" class="main-nav-item">Партнеры</a>
 									<a href="#" class="main-nav-item">Программа лояльности</a>
 									<a href="#" class="main-nav-item">Контакты</a>
 								</div>
+								<a href="#" class="my-acc-mobile">
+									<div class="icon-text acc-link">
+										<i class="mdi mdi-account-circle"></i>
+										Мой кабинет
+									</div>
+								</a>
 								<div class="main-nav-submenu">
 									<a href="#" class="main-nav-subitem">Что такое живое пиво?</a>
 									<a href="#" class="main-nav-subitem">Что такое живое вино?</a>
@@ -72,7 +78,7 @@
 						</nav>
 
 						<div class="toggle-mask"></div>
-					</div>-->
+					</div>
 					<a href="index.html" class="logo">
 						<img src="img/logo.svg" class="logo-desktop" alt="дружище лого">
 						<img src="img/face.svg" class="logo-mobile" alt="дружище лого">
@@ -83,7 +89,7 @@
 							<option value="en">En</option>
 						</select>
 					</div>
-					<!--<div class="select-city-wrapper d-flex align-items-center">
+					<div class="select-city-wrapper d-flex align-items-center">
 						<i class="mdi mdi-map-marker"></i>
 						<div class="select-col">
 							<select class="select-city">
@@ -102,9 +108,9 @@
 							</select>
 							<p class="num-shops">12 магазинов</p>
 						</div>
-					</div>-->
+					</div>
 				</div>
-				<!--<div class="header-center d-flex justify-content-center">
+				<div class="header-center d-flex justify-content-center">
 					<div class="header-center-box text-right">
 						<h2 class="title is-2 text-uppercase medium-carmine bold">
 							Доставка
@@ -128,9 +134,9 @@
 						</div>
 						<p>Доставка и предзаказ отзывы и пожелания</p>
 					</div>
-				</div>-->
+				</div>
 				<div class="header-right d-flex justify-content-end align-items-center">
-					<!--<a href="#" class="icon-text">
+					<a href="#" class="icon-text acc-link">
 						<i class="mdi mdi-account-circle"></i>
 						Мой кабинет
 					</a>
@@ -325,62 +331,13 @@
 						</div>
 
 						<div class="toggle-mask2"></div>
-					</div>-->
-
-					<!-- TODO: Above sections show only after login -->
-					<p class="login-hint-text text-right">
-						<span class="medium-carmine">Войдите на сайт</span>, чтобы получить бонусы
-					</p>
-					<div class="icon-text login-link">
-						<i class="mdi mdi-account-circle"></i>
-						Войти
 					</div>
-					<div class="nav-right-slide nav-right-slide-click">
-						<div class="login-form-wrapper">
-							<h2 class="login-form-title title is-2 bold medium-carmine text-uppercase">
-								Вход в магазин
-							</h2>
-							<form class="mb-30">
-								<div class="input-material">
-									<input type="email" id="email">
-									<label for="email" class="input-label">Эл. почта или номер карты</label>
-								</div>
-								<div class="input-material">
-									<input type="password" id="password">
-									<label for="password" class="input-label">Пароль</label>
-								</div>
-								<!--<div class="input-material autoheight">
-									<textarea id="message"></textarea>
-									<label for="message" class="input-label">Message</label>
-								</div>-->
-
-								<a href="#" class="link-underline mb-30">Напомнить пароль</a>
-
-								<button class="btn btn-primary stretched">Войти</button>
-							</form>
-
-							<div class="text-center">
-								<h4 class="title is-4 mb-10">Вход как пользователь</h4>
-								<div class="social-auth mb-30">
-									<a href="#" class="auth-link">
-										<img src="img/G_icon.svg" alt="">
-									</a>
-									<a href="#" class="auth-link">
-										<img src="img/F_icon.svg" alt="">
-									</a>
-								</div>
-
-								<a href="#" class="link-underline">Зарегистрироваться</a>
-							</div>
-						</div>
-					</div>
-					<div class="toggle-mask3"></div>
 				</div>
 			</div>
 		</header>
 
 		<main class="main-section">
-			<!--<div class="sub-menu-wrapper">
+			<div class="sub-menu-wrapper">
 				<div class="inner-wrapper">
 					<ul class="sub-menu d-flex align-items-center justify-content-center">
 						<li><a href="#">О нас</a></li>
@@ -405,7 +362,120 @@
 						<li><a href="#">Арендодателям</a></li>
 					</ul>
 				</div>
-			</div>-->
+			</div>
+
+			<div class="outer-wrapper shop-page">
+				<div class="inner-wrapper">
+					<div class="bread-crumbs">
+						<a href="index.html" class="bread-crumb-link">ГЛАВНАЯ</a>
+						<a href="#" class="bread-crumb-link current">ИНТЕРНЕТ-МАГАЗИН</a>
+					</div>
+
+					<div class="shop-list">
+						<div class="shop-item">
+							<div class="shop-arrow">
+								<i class="mdi mdi-chevron-down"></i>
+							</div>
+
+							<div class="shop-img">
+								<img src="img/shop-img1.png" alt="">
+							</div>
+							<h2 class="shop-title title is-2 text-uppercase">ПИВО</h2>
+
+							<div class="shop-sublist">
+								<a href="#" class="shop-subitem">Крафтовое</a>
+								<a href="#" class="shop-subitem">Разливное</a>
+								<a href="#" class="shop-subitem">Белое</a>
+								<a href="#" class="shop-subitem">Светлое</a>
+								<a href="#" class="shop-subitem">Темное</a>
+								<a href="#" class="shop-subitem">Фильтрованное</a>
+								<a href="#" class="shop-subitem">Нефильтрованное</a>
+							</div>
+						</div>
+						<div class="shop-item">
+							<div class="shop-arrow">
+								<i class="mdi mdi-chevron-down"></i>
+							</div>
+
+							<div class="shop-img">
+								<img src="img/shop-img2.png" alt="">
+							</div>
+							<h2 class="shop-title title is-2 text-uppercase">ВИНО</h2>
+
+							<div class="shop-sublist">
+								<a href="#" class="shop-subitem">Cладкое</a>
+								<a href="#" class="shop-subitem">Полусухое</a>
+								<a href="#" class="shop-subitem">Полусладкое</a>
+								<a href="#" class="shop-subitem">Сухое</a>
+							</div>
+						</div>
+						<a href="#" class="shop-item">
+							<div class="shop-img">
+								<img src="img/shop-img3.png" alt="">
+							</div>
+							<h2 class="shop-title title is-2 text-uppercase">СИДР</h2>
+						</a>
+						<a href="#" class="shop-item">
+							<div class="shop-img">
+								<img src="img/shop-img4.png" alt="">
+							</div>
+							<h2 class="shop-title title is-2 text-uppercase">БИРТЕЙЛЬ</h2>
+						</a>
+						<div class="shop-item">
+							<div class="shop-arrow">
+								<i class="mdi mdi-chevron-down"></i>
+							</div>
+
+							<div class="shop-img" style="bottom: -10px;">
+								<img src="img/shop-img5.png" alt="">
+							</div>
+							<h2 class="shop-title title is-2 text-uppercase">ЗАКУСКИ</h2>
+
+							<div class="shop-sublist">
+								<a href="#" class="shop-subitem">Закуска 1</a>
+								<a href="#" class="shop-subitem">Закуска 2</a>
+								<a href="#" class="shop-subitem">Закуска 3</a>
+								<a href="#" class="shop-subitem">Закуска 4</a>
+							</div>
+						</div>
+						<a href="#" class="shop-item">
+							<div class="shop-img" style="bottom: 40px;">
+								<img src="img/shop-img6.png" alt="">
+							</div>
+							<h2 class="shop-title title is-2 text-uppercase">СОКИ</h2>
+						</a>
+						<a href="#" class="shop-item">
+							<div class="shop-img" style="bottom: -10px;">
+								<img src="img/shop-img7.png" alt="">
+							</div>
+							<h2 class="shop-title title is-2 text-uppercase">ЛИМОНАД</h2>
+						</a>
+						<a href="#" class="shop-item">
+							<div class="shop-img" style=" bottom: -10px;">
+								<img src="img/shop-img8.png" alt="">
+							</div>
+							<h2 class="shop-title title is-2 text-uppercase">КВАС</h2>
+						</a>
+						<div class="shop-item">
+							<div class="shop-arrow">
+								<i class="mdi mdi-chevron-down"></i>
+							</div>
+
+							<div class="shop-img" style="bottom: -10px;">
+								<img src="img/shop-img9.png" alt="">
+							</div>
+							<h2 class="shop-title title is-2 text-uppercase">СУВЕНИРЫ </h2>
+
+							<div class="shop-sublist">
+								<a href="#" class="shop-subitem">Сувенир 1</a>
+								<a href="#" class="shop-subitem">Сувенир 2</a>
+								<a href="#" class="shop-subitem">Сувенир 3</a>
+								<a href="#" class="shop-subitem">Сувенир 4</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 
 		<footer class="main-footer">

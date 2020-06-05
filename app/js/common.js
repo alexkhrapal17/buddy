@@ -239,4 +239,9 @@ $(function() {
             clickable: true,
         },
     });
+
+    // Shop toggle
+    $('.shop-arrow').on('click', function () {
+       $(this).closest('.shop-item').toggleClass('active');
+    });
 });
