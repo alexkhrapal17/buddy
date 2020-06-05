@@ -32,12 +32,18 @@
 							<div class="main-nav-top">
 								<div class="main-nav-menu">
 									<a href="#" class="main-nav-item">О нас</a>
-									<a href="#" class="main-nav-item">Интернет - магазин</a>
+									<a href="shop.html" class="main-nav-item">Интернет - магазин</a>
 									<a href="news.html" class="main-nav-item">Новости и акции</a>
 									<a href="#" class="main-nav-item">Партнеры</a>
 									<a href="#" class="main-nav-item">Программа лояльности</a>
 									<a href="#" class="main-nav-item">Контакты</a>
 								</div>
+								<a href="#" class="my-acc-mobile">
+									<div class="icon-text acc-link">
+										<i class="mdi mdi-account-circle"></i>
+										Мой кабинет
+									</div>
+								</a>
 								<div class="main-nav-submenu">
 									<a href="#" class="main-nav-subitem">Что такое живое пиво?</a>
 									<a href="#" class="main-nav-subitem">Что такое живое вино?</a>
@@ -331,20 +337,188 @@
 		</header>
 
 		<main class="main-section">
-			<ol style="margin: 30px auto; max-width: 600px;">
-				<li>
-					<a href="index.html">Главная</a>
-				</li>
-				<li>
-					<a href="header2.html">Header 2</a>
-				</li>
-				<li>
-					<a href="shop.html">Интернет - магазин</a>
-				</li>
-				<li>
-					<a href="news.html">Новости и акции</a>
-				</li>
-			</ol>
+			<div class="sub-menu-wrapper">
+				<div class="inner-wrapper">
+					<ul class="sub-menu d-flex align-items-center justify-content-center">
+						<li><a href="#">О нас</a></li>
+						<li class="sublist-true">
+							Интернет - <br> магазин
+							<ul class="dropdown-list">
+								<li><a href="#">Test link</a></li>
+								<li><a href="#">Test link</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Новости <br> и акции</a></li>
+						<li><a href="#">Партнеры</a></li>
+						<li class="sublist-true">
+							Программа <br> лояльности
+							<ul class="dropdown-list">
+								<li><a href="#">Test link</a></li>
+								<li><a href="#">Test link</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Карьера</a></li>
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Арендодателям</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<a href="#" class="mobile-back-button">
+				<i class="mdi mdi-arrow-left"></i>
+				<h2 class="title is-2 text-uppercase bold medium-carmine">
+					Новости и акции
+				</h2>
+			</a>
+
+			<div class="inner-wrapper">
+				<div class="bread-crumbs absolute-light">
+					<a href="index.html" class="bread-crumb-link">ГЛАВНАЯ</a>
+					<a href="#" class="bread-crumb-link current">НОВОСТИ И АКЦИИ</a>
+				</div>
+			</div>
+
+			<div class="news-slider">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="news-slide" style="background-image: url('img/news-img.png');">
+							<div class="inner-wrapper">
+								<div class="news-slide-info">
+									<p class="text-uppercase gin-fizz mb-10">19 АПРЕЛЯ 2019</p>
+									<h1 class="title is-1 text-uppercase ripe-lemon mb-10">
+										ПОПРОБУЙ НАШЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ
+									</h1>
+									<p class="gin-fizz mb-25">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+									<div class="d-inline-block">
+										<a href="#" class="btn btn-cta">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="news-slide" style="background-image: url('img/news-img.png');">
+							<div class="inner-wrapper">
+								<div class="news-slide-info">
+									<p class="text-uppercase gin-fizz mb-10">19 АПРЕЛЯ 2019</p>
+									<h1 class="title is-1 text-uppercase ripe-lemon mb-10">
+										ПОПРОБУЙ НАШЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ
+									</h1>
+									<p class="gin-fizz mb-25">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+									<div class="d-inline-block">
+										<a href="#" class="btn btn-cta">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide">
+						<div class="news-slide" style="background-image: url('img/news-img.png');">
+							<div class="inner-wrapper">
+								<div class="news-slide-info">
+									<p class="text-uppercase gin-fizz mb-10">19 АПРЕЛЯ 2019</p>
+									<h1 class="title is-1 text-uppercase ripe-lemon mb-10">
+										ПОПРОБУЙ НАШЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ
+									</h1>
+									<p class="gin-fizz mb-25">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+									<div class="d-inline-block">
+										<a href="#" class="btn btn-cta">Подробнее</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+
+			<div class="outer-wrapper">
+				<div class="inner-wrapper">
+					<div class="news-list row flex-wrap">
+						<div class="col-xl-3 col-lg-4 col-md-6">
+							<a href="#" class="news-card">
+								<div class="news-img">
+									<img src="img/news-img1.jpg" alt="">
+								</div>
+								<p class="text-uppercase rock mb-10">19 АПРЕЛЯ 2019</p>
+								<p class="news-name text-uppercase medium-carmine bold">ПОПРОБУЙ НАШЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ</p>
+							</a>
+						</div>
+						<div class="col-xl-3 col-lg-4 col-md-6">
+							<a href="#" class="news-card">
+								<div class="news-img">
+									<img src="img/news-img2.jpg" alt="">
+								</div>
+								<p class="text-uppercase rock mb-10">19 АПРЕЛЯ 2019</p>
+								<p class="news-name text-uppercase medium-carmine bold">ПОПРОБУЙ НАШЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ</p>
+							</a>
+						</div>
+						<div class="col-xl-3 col-lg-4 col-md-6">
+							<a href="#" class="news-card">
+								<div class="news-img">
+									<img src="img/news-img3.jpg" alt="">
+								</div>
+								<p class="text-uppercase rock mb-10">19 АПРЕЛЯ 2019</p>
+								<p class="news-name text-uppercase medium-carmine bold">ПОПРОБУЙ НАШЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ</p>
+							</a>
+						</div>
+						<div class="col-xl-3 col-lg-4 col-md-6">
+							<a href="#" class="news-card">
+								<div class="news-img">
+									<img src="img/news-img4.jpg" alt="">
+								</div>
+								<p class="text-uppercase rock mb-10">19 АПРЕЛЯ 2019</p>
+								<p class="news-name text-uppercase medium-carmine bold">ПОПРОБУЙ НАШЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ</p>
+							</a>
+						</div>
+						<div class="col-xl-3 col-lg-4 col-md-6">
+							<a href="#" class="news-card">
+								<div class="news-img">
+									<img src="img/news-img2.jpg" alt="">
+								</div>
+								<p class="text-uppercase rock mb-10">19 АПРЕЛЯ 2019</p>
+								<p class="news-name text-uppercase medium-carmine bold">ПОПРОБУЙ НАШЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ</p>
+							</a>
+						</div>
+						<div class="col-xl-3 col-lg-4 col-md-6">
+							<a href="#" class="news-card">
+								<div class="news-img">
+									<img src="img/news-img3.jpg" alt="">
+								</div>
+								<p class="text-uppercase rock mb-10">19 АПРЕЛЯ 2019</p>
+								<p class="news-name text-uppercase medium-carmine bold">ПОПРОБУЙ НАШЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ</p>
+							</a>
+						</div>
+						<div class="col-xl-3 col-lg-4 col-md-6">
+							<a href="#" class="news-card">
+								<div class="news-img">
+									<img src="img/news-img4.jpg" alt="">
+								</div>
+								<p class="text-uppercase rock mb-10">19 АПРЕЛЯ 2019</p>
+								<p class="news-name text-uppercase medium-carmine bold">ПОПРОБУЙ НАШЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ</p>
+							</a>
+						</div>
+						<div class="col-xl-3 col-lg-4 col-md-6">
+							<a href="#" class="news-card">
+								<div class="news-img">
+									<img src="img/news-img2.jpg" alt="">
+								</div>
+								<p class="text-uppercase rock mb-10">19 АПРЕЛЯ 2019</p>
+								<p class="news-name text-uppercase medium-carmine bold">ПОПРОБУЙ НАШЕ МОБИЛЬНОЕ ПРИЛОЖЕНИЕ</p>
+							</a>
+						</div>
+					</div>
+
+					<div class="text-center">
+						<div class="d-inline-block">
+							<a href="#" class="btn btn-invert">показать еще</a>
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 
 		<footer class="main-footer">
@@ -410,6 +584,9 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- TODO: Remove after dev -->
+		<div class="links"><a href="links.html">All pages</a></div>
 
 		<script src="js/scripts.min.js"></script>
 		<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>

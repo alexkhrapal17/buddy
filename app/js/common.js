@@ -240,6 +240,22 @@ $(function() {
         },
     });
 
+    let newsSlider = new Swiper('.news-slider', {
+        loop: true,
+        speed: 700,
+        fadeEffect: { crossFade: true },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: true,
+        },
+        slidersPerView: 1,
+        effect: "fade",
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
     // Shop toggle
     $('.shop-arrow').on('click', function () {
        $(this).closest('.shop-item').toggleClass('active');

@@ -33,6 +33,10 @@ body {
   }
 }
 
+a {
+  display: inline-block;
+}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -53,6 +57,22 @@ input[type="number"] {
   margin: 0 auto;
   padding: 0 16px;
   position: relative;
+}
+
+.mobile-back-button {
+  display: none;
+  padding: 30px 20px;
+
+  @media (max-width: $screen-sm) {
+    display: flex;
+  }
+
+  .mdi {
+    font-size: 25px;
+    line-height: 30px;
+    color: $hurricane;
+    margin-right: 15px;
+  }
 }
 
 .main-section {
@@ -142,6 +162,30 @@ input[type="number"] {
   display: flex;
   align-items: center;
 
+  &.absolute-light {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1000;
+
+    .bread-crumb-link {
+      color: $gin-fizz;
+
+      &:hover {
+        color: $gin-fizz;
+        opacity: .7;
+
+        &:after {
+          color: $gin-fizz;
+        }
+      }
+
+      &:after {
+        color: $gin-fizz;
+      }
+    }
+  }
+
   @media (max-width: $screen-sm) {
     display: none;
   }
@@ -220,6 +264,10 @@ input[type="number"] {
     line-height: 30px;
     margin-right: 40px;
     @include transition(.2s);
+
+    @media (max-width: $screen-xs) {
+      margin-right: 30px;
+    }
 
     &:last-child {
       margin-right: 0;
