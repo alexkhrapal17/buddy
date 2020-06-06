@@ -2,20 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fee1305a-935f-4237-b2c4-44c916d651a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/about-us.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/contact-us.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/partners.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/about-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/contact-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact-us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/header2.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/header2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/js/scripts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/scripts.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/links.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/links.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/news-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/news-detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/news.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/_custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/_custom.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/_pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/_pages.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/_sliders.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/_sliders.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/shop.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -34,8 +31,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/links.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="559">
-                  <caret line="353" column="44" selection-start-line="353" selection-start-column="44" selection-end-line="353" selection-end-column="44" />
+                <state relative-caret-position="457">
+                  <caret line="356" column="42" selection-start-line="356" selection-start-column="42" selection-end-line="356" selection-end-column="42" />
                   <folding>
                     <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -58,15 +55,28 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/contact-us.html">
+            <entry file="file://$PROJECT_DIR$/app/partners.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="337">
-                  <caret line="555" column="34" lean-forward="true" selection-start-line="416" selection-start-column="28" selection-end-line="555" selection-end-column="34" />
+                <state relative-caret-position="522">
+                  <caret line="494" column="30" selection-start-line="494" selection-start-column="30" selection-end-line="494" selection-end-column="30" />
                   <folding>
                     <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-                    <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#2;n#div#1;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/about-us.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="340">
+                  <caret line="399" column="30" lean-forward="true" selection-start-line="386" selection-start-column="24" selection-end-line="399" selection-end-column="30" />
+                  <folding>
+                    <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#2;n#div#1;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
                   </folding>
                 </state>
@@ -88,20 +98,20 @@
                   </provider>
                 </entry>
               </file>
-              <file pinned="false" current-in-tab="true">
+              <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/app/scss/_pages.scss">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="332">
+                    <state relative-caret-position="179">
                       <caret line="453" column="32" selection-start-line="453" selection-start-column="32" selection-end-line="453" selection-end-column="32" />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file pinned="false" current-in-tab="false">
+              <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/scss/_custom.scss">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="126">
-                      <caret line="825" column="16" lean-forward="true" selection-start-line="825" selection-start-column="16" selection-end-line="825" selection-end-column="16" />
+                    <state relative-caret-position="210">
+                      <caret line="87" column="12" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
                     </state>
                   </provider>
                 </entry>
@@ -136,10 +146,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>nav-right-slide</find>
-      <find>minus</find>
-      <find>Интернет</find>
-      <find>&lt;a href=&quot;#&quot; class=&quot;main-nav-item&quot;&gt;Новости и акции&lt;/a&gt;</find>
       <find>Новости и акции</find>
       <find>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Новости и акции&lt;/a&gt;&lt;/li&gt;</find>
       <find>shop-subitem</find>
@@ -163,9 +169,13 @@
       <find>responsive-img</find>
       <find>input</find>
       <find>back-btn-wrap</find>
-      <find>contact-col-right</find>
       <find>back</find>
       <find>back-b</find>
+      <find>&lt;a href=&quot;#&quot; class=&quot;main-nav-item&quot;&gt;Партнеры&lt;/a&gt;</find>
+      <find>партнеры</find>
+      <find>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Партнеры&lt;/a&gt;&lt;/li&gt;</find>
+      <find>contact-col-right</find>
+      <find>content-wrapper</find>
     </findStrings>
     <replaceStrings>
       <replace>let</replace>
@@ -176,6 +186,8 @@
       <replace>&lt;li&gt;&lt;a href=&quot;news.html&quot;&gt;Новости &lt;br&gt; и акции&lt;/a&gt;&lt;/li&gt;</replace>
       <replace>&lt;a href=&quot;contact-us.html&quot; class=&quot;main-nav-item&quot;&gt;Контакты&lt;/a&gt;</replace>
       <replace>&lt;li&gt;&lt;a href=&quot;contact-us.html&quot;&gt;Контакты&lt;/a&gt;&lt;/li&gt;</replace>
+      <replace>&lt;a href=&quot;partners.html&quot; class=&quot;main-nav-item&quot;&gt;Партнеры&lt;/a&gt;</replace>
+      <replace>&lt;li&gt;&lt;a href=&quot;partners.html&quot;&gt;Партнеры&lt;/a&gt;&lt;/li&gt;</replace>
       <replace>&lt;a href=&quot;news-detail.html&quot; class=&quot;btn btn-cta&quot;&gt;Подробнее&lt;/a&gt;</replace>
     </replaceStrings>
     <dirStrings>
@@ -211,13 +223,14 @@
         <option value="$PROJECT_DIR$/app/news.html" />
         <option value="$PROJECT_DIR$/app/news-detail.html" />
         <option value="$PROJECT_DIR$/app/scss/_sliders.scss" />
-        <option value="$PROJECT_DIR$/app/about-us.html" />
-        <option value="$PROJECT_DIR$/app/links.html" />
         <option value="$PROJECT_DIR$/app/header2.html" />
         <option value="$PROJECT_DIR$/app/js/common.js" />
-        <option value="$PROJECT_DIR$/app/scss/_custom.scss" />
         <option value="$PROJECT_DIR$/app/contact-us.html" />
         <option value="$PROJECT_DIR$/app/scss/_pages.scss" />
+        <option value="$PROJECT_DIR$/app/links.html" />
+        <option value="$PROJECT_DIR$/app/about-us.html" />
+        <option value="$PROJECT_DIR$/app/scss/_custom.scss" />
+        <option value="$PROJECT_DIR$/app/partners.html" />
       </list>
     </option>
   </component>
@@ -306,12 +319,12 @@
       <workItem from="1591114342648" duration="17784000" />
       <workItem from="1591200544585" duration="16520000" />
       <workItem from="1591285789598" duration="15243000" />
-      <workItem from="1591381382130" duration="21239000" />
+      <workItem from="1591381382130" duration="22387000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86459000" />
+    <option name="totallyTimeSpent" value="87607000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -496,13 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/css/main.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="81090" selection-start-column="81090" selection-end-column="81090" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -586,18 +592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/about-us.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="371" column="16" selection-start-line="371" selection-start-column="16" selection-end-line="371" selection-end-column="16" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/news.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="556">
@@ -637,10 +631,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/_pages.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="453" column="32" selection-start-line="453" selection-start-column="32" selection-end-line="453" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="276" column="8" selection-start-line="276" selection-start-column="8" selection-end-line="276" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/links.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="353" column="44" selection-start-line="353" selection-start-column="44" selection-end-line="353" selection-end-column="44" />
+        <state relative-caret-position="457">
+          <caret line="356" column="42" selection-start-line="356" selection-start-column="42" selection-end-line="356" selection-end-column="42" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -652,20 +660,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/common.js">
+    <entry file="file://$PROJECT_DIR$/app/css/main.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="276" column="8" selection-start-line="276" selection-start-column="8" selection-end-line="276" selection-end-column="8" />
+        <state relative-caret-position="227">
+          <caret column="57902" selection-start-column="57902" selection-end-column="57902" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/contact-us.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="555" column="34" lean-forward="true" selection-start-line="416" selection-start-column="28" selection-end-line="555" selection-end-column="34" />
+        <state relative-caret-position="318">
+          <caret line="371" column="66" lean-forward="true" selection-start-line="371" selection-start-column="32" selection-end-line="371" selection-end-column="66" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#h2#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
@@ -675,15 +685,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/_custom.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="825" column="16" lean-forward="true" selection-start-line="825" selection-start-column="16" selection-end-line="825" selection-end-column="16" />
+        <state relative-caret-position="210">
+          <caret line="87" column="12" selection-start-line="87" selection-start-column="12" selection-end-line="87" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/_pages.scss">
+    <entry file="file://$PROJECT_DIR$/app/about-us.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="453" column="32" selection-start-line="453" selection-start-column="32" selection-end-line="453" selection-end-column="32" />
+        <state relative-caret-position="340">
+          <caret line="399" column="30" lean-forward="true" selection-start-line="386" selection-start-column="24" selection-end-line="399" selection-end-column="30" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/partners.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="494" column="30" selection-start-line="494" selection-start-column="30" selection-end-line="494" selection-end-column="30" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

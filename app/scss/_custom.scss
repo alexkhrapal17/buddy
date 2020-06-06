@@ -67,10 +67,31 @@ input[type="number"] {
 .content-wrapper {
   max-width: 950px;
   margin: 0 auto;
+  position: relative;
+
+  @media (max-width: $screen-sm) {
+    padding-left: 40px;
+  }
 
   .responsive-img {
     border-radius: 8px;
     margin-bottom: 20px;
+  }
+}
+
+.back-btn-mobile {
+  display: none;
+
+  @media (max-width: $screen-sm) {
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    font-size: 25px;
+    line-height: 25px;
+    color: $rock;
+    width: 40px;
+    padding-right: 15px;
   }
 }
 
@@ -175,12 +196,6 @@ input[type="number"] {
 .pr-55 { padding-right: 55px }
 .pb-55 { padding-bottom: 55px }
 .pl-55 { padding-left: 55px }
-
-.pt-none-mobile {
-  @media (max-width: $screen-sm) {
-    padding-top: 0 !important;
-  }
-}
 
 .reset-position {
   position: static !important;

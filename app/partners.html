@@ -23,7 +23,7 @@
 		<header class="main-header">
 			<div class="header-wrapper d-flex justify-content-between">
 				<div class="header-left d-flex align-items-center">
-					<!--<div class="menu-wrapper">
+					<div class="menu-wrapper">
 						<div class="menu-toggle">
 							<i class="mdi mdi-menu"></i>
 						</div>
@@ -32,12 +32,18 @@
 							<div class="main-nav-top">
 								<div class="main-nav-menu">
 									<a href="about-us.html" class="main-nav-item">О нас</a>
-									<a href="#" class="main-nav-item">Интернет - магазин</a>
+									<a href="shop.html" class="main-nav-item">Интернет - магазин</a>
 									<a href="news.html" class="main-nav-item">Новости и акции</a>
 									<a href="partners.html" class="main-nav-item">Партнеры</a>
 									<a href="#" class="main-nav-item">Программа лояльности</a>
 									<a href="contact-us.html" class="main-nav-item">Контакты</a>
 								</div>
+								<a href="#" class="my-acc-mobile">
+									<div class="icon-text acc-link">
+										<i class="mdi mdi-account-circle"></i>
+										Мой кабинет
+									</div>
+								</a>
 								<div class="main-nav-submenu">
 									<a href="#" class="main-nav-subitem">Что такое живое пиво?</a>
 									<a href="#" class="main-nav-subitem">Что такое живое вино?</a>
@@ -72,7 +78,7 @@
 						</nav>
 
 						<div class="toggle-mask"></div>
-					</div>-->
+					</div>
 					<a href="index.html" class="logo">
 						<img src="img/logo.svg" class="logo-desktop" alt="дружище лого">
 						<img src="img/face.svg" class="logo-mobile" alt="дружище лого">
@@ -83,7 +89,7 @@
 							<option value="en">En</option>
 						</select>
 					</div>
-					<!--<div class="select-city-wrapper d-flex align-items-center">
+					<div class="select-city-wrapper d-flex align-items-center">
 						<i class="mdi mdi-map-marker"></i>
 						<div class="select-col">
 							<select class="select-city">
@@ -102,9 +108,9 @@
 							</select>
 							<p class="num-shops">12 магазинов</p>
 						</div>
-					</div>-->
+					</div>
 				</div>
-				<!--<div class="header-center d-flex justify-content-center">
+				<div class="header-center d-flex justify-content-center">
 					<div class="header-center-box text-right">
 						<h2 class="title is-2 text-uppercase medium-carmine bold">
 							Доставка
@@ -128,9 +134,9 @@
 						</div>
 						<p>Доставка и предзаказ отзывы и пожелания</p>
 					</div>
-				</div>-->
+				</div>
 				<div class="header-right d-flex justify-content-end align-items-center">
-					<!--<a href="#" class="icon-text">
+					<a href="#" class="icon-text acc-link">
 						<i class="mdi mdi-account-circle"></i>
 						Мой кабинет
 					</a>
@@ -325,65 +331,13 @@
 						</div>
 
 						<div class="toggle-mask2"></div>
-					</div>-->
-
-					<!-- TODO: Above sections show only after login -->
-					<p class="login-hint-text text-right">
-						<span class="medium-carmine">Войдите на сайт</span>, чтобы получить бонусы
-					</p>
-					<div class="icon-text login-link">
-						<i class="mdi mdi-account-circle"></i>
-						Войти
 					</div>
-					<div class="nav-right-slide nav-right-slide-click">
-						<div class="login-form-wrapper">
-							<h2 class="login-form-title title is-2 bold medium-carmine text-uppercase">
-								Вход в магазин
-							</h2>
-							<form class="mb-30">
-								<div class="input-material">
-									<input type="email" id="email">
-									<label for="email" class="input-label">Эл. почта или номер карты</label>
-									<!--<div class="input-error">Error text</div>-->
-								</div>
-								<div class="input-material">
-									<input type="password" id="password">
-									<label for="password" class="input-label">Пароль</label>
-									<!--<div class="input-error">Error text</div>-->
-								</div>
-								<!--<div class="input-material autoheight">
-									<textarea id="message"></textarea>
-									<label for="message" class="input-label">Message</label>
-									<div class="input-error">Error text</div>
-								</div>-->
-
-								<a href="#" class="link-underline mb-30">Напомнить пароль</a>
-
-								<button class="btn btn-primary stretched">Войти</button>
-							</form>
-
-							<div class="text-center">
-								<h4 class="title is-4 mb-10">Вход как пользователь</h4>
-								<div class="social-auth mb-30">
-									<a href="#" class="auth-link">
-										<img src="img/G_icon.svg" alt="">
-									</a>
-									<a href="#" class="auth-link">
-										<img src="img/F_icon.svg" alt="">
-									</a>
-								</div>
-
-								<a href="#" class="link-underline">Зарегистрироваться</a>
-							</div>
-						</div>
-					</div>
-					<div class="toggle-mask3"></div>
 				</div>
 			</div>
 		</header>
 
 		<main class="main-section">
-			<!--<div class="sub-menu-wrapper">
+			<div class="sub-menu-wrapper">
 				<div class="inner-wrapper">
 					<ul class="sub-menu d-flex align-items-center justify-content-center">
 						<li><a href="about-us.html">О нас</a></li>
@@ -408,7 +362,140 @@
 						<li><a href="#">Арендодателям</a></li>
 					</ul>
 				</div>
-			</div>-->
+			</div>
+
+			<div class="outer-wrapper pt-none-mobile">
+				<div class="inner-wrapper">
+					<div class="bread-crumbs">
+						<a href="index.html" class="bread-crumb-link">ГЛАВНАЯ</a>
+						<a href="#" class="bread-crumb-link current">Партнеры</a>
+					</div>
+
+					<div class="content-wrapper">
+						<a href="#" class="back-btn-mobile">
+							<i class="mdi mdi-arrow-left"></i>
+						</a>
+						<h2 class="title is-2 text-uppercase bold medium-carmine mb-30">
+							Партнеры
+						</h2>
+						<p class="mb-20">
+							Наша история началась с идеи создать место, где посетитель будет чувствовать себя максимально комфортно. Но как это сделать? Мы пришли к выводу, что нужно просто быть собой и относится к людям так, как бы мы хотели чтобы относились к нам.
+						</p>
+						<p class="mb-20">
+							К нам приходили интересные люди не просто покупать продукт, мы общались, узнавали , что нравится и не нравится, чтобы хотелось изменить,  рассказывали свои истории и делились интересными секретами и мы поняли, что мы и наши посетители интересны друг другу. Благодаря вам мы менялись и становились лучше.
+						</p>
+						<div class="video-wrapper">
+							<video class="video" playsinline>
+								<source src="video/video.mp4" type="video/mp4">
+								Your browser doesn't support HTML5 video tag.
+							</video>
+							<div class="playpause">
+								<img src="img/play.svg" alt="">
+							</div>
+
+							<!-- TODO: If any cdn video use below -->
+							<!--<div class="video-cdn-player">
+                                <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+                            </div>-->
+						</div>
+						<p class="mb-20">
+							Мы нашли самую большую ценность благодаря, которой двигались вперед - открытость, доверие и честность, ведь люди, которые приходили к нам всегда были услышаны. Были конечно же и факапы, которые научили нас быстро реагировать и исправлять ошибки. Посетители возвращались к нам и, когда мы спрашивали “почему вы выбираете нас?” ответ был однозначным - дружелюбность, атмосфера.
+						</p>
+						<p class="mb-20">
+							Когда мы собрали все наши ценности воедино, мы задали вопрос КТО МЫ для вас? Посетители в шутку говорили - ДРУЖИЩЕ) мы доверяем друг другу, мы становимся лучше благодаря тому, что слышим друг друга, мы делимся плохим и хорошим.<br>
+							И через пять лет у нас появилось название “Дружище”. Название, которое придумали, создали нам наши посетители.
+						</p>
+						<p class="mb-20">
+							Уже пять лет мы называемся  “Дружище”. За  десять лет, мы решили не останавливаться и открылись в Харьковской и Донецкой области. На данный момент у нас уже 70 магазинов с большим ассортиментом вкусных напитков, закусок и сувенирной продукцией.
+						</p>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="responsive-img">
+									<img src="img/news-detail-img1.jpg" alt="">
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="responsive-img">
+									<img src="img/news-detail-img2.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<p class="mb-40">
+							На сегодняшний день у нас большая команда, мы ежедневно обучаемся и растем. <br>
+							Мы взяли за основу ценность о том, что в первую очередь мы ДРУЗЬЯ нашим посетителям именно поэтому мы прислушиваемся к потребностям каждого.<br>
+							Мы увеличиваем ассортимент товаров и следим за качеством нашей продукции <br>
+						</p>
+
+						<div class="suppliers-slider">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="suppliers-list">
+										<div class="supplier-item">
+											<img src="img/supplier-img1.png" alt="">
+										</div>
+										<div class="supplier-item">
+											<img src="img/supplier-img2.png" alt="">
+										</div>
+										<div class="supplier-item">
+											<img src="img/supplier-img3.png" alt="">
+										</div>
+										<div class="supplier-item">
+											<img src="img/supplier-img4.png" alt="">
+										</div>
+										<div class="supplier-item">
+											<img src="img/supplier-img5.png" alt="">
+										</div>
+										<div class="supplier-item">
+											<img src="img/supplier-img6.png" alt="">
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="suppliers-list2">
+										<div class="supplier-item">
+											<img src="img/supplier-img7.png" alt="">
+										</div>
+										<div class="supplier-item">
+											<img src="img/supplier-img8.png" alt="">
+										</div>
+										<div class="supplier-item">
+											<img src="img/supplier-img9.png" alt="">
+										</div>
+										<div class="supplier-item">
+											<img src="img/supplier-img10.png" alt="">
+										</div>
+										<div class="supplier-item">
+											<img src="img/supplier-img11.png" alt="">
+										</div>
+										<div class="supplier-item">
+											<img src="img/supplier-img12.png" alt="">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-arrows-wrap">
+								<div class="swiper-arrow-prev"><i class="mdi mdi-arrow-left"></i></div>
+								<div class="swiper-arrow-next"><i class="mdi mdi-arrow-right"></i></div>
+							</div>
+						</div>
+
+						<div class="video-wrapper">
+							<video class="video" playsinline>
+								<source src="video/video.mp4" type="video/mp4">
+								Your browser doesn't support HTML5 video tag.
+							</video>
+							<div class="playpause">
+								<img src="img/play.svg" alt="">
+							</div>
+
+							<!-- TODO: If any cdn video use below -->
+							<!--<div class="video-cdn-player">
+                                <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0" allowfullscreen></iframe>
+                            </div>-->
+						</div>
+					</div>
+				</div>
+			</div>
 		</main>
 
 		<footer class="main-footer">
