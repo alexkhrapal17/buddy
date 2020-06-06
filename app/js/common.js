@@ -1,6 +1,6 @@
-$(function() {
+$(function () {
 
-	// Fixed header
+    // Fixed header
     let mainHeader = $('.main-header'),
         secondaryNavigation = $('.cd-secondary-nav'),
         belowNavHeroContent = $('.sub-nav-hero'),
@@ -12,14 +12,14 @@ $(function() {
         scrollDelta = 10,
         scrollOffset = 150;
 
-    mainHeader.on('click', '.nav-trigger', function(event){
+    mainHeader.on('click', '.nav-trigger', function (event) {
         // open primary navigation on mobile
         event.preventDefault();
         mainHeader.toggleClass('nav-open');
     });
 
-    $(window).on('scroll', function(){
-        if( !scrolling ) {
+    $(window).on('scroll', function () {
+        if (!scrolling) {
             scrolling = true;
             (!window.requestAnimationFrame)
                 ? setTimeout(autoHideHeader, 250)
@@ -27,14 +27,14 @@ $(function() {
         }
     });
 
-    $(window).on('resize', function(){
+    $(window).on('resize', function () {
         headerHeight = mainHeader.height();
     });
 
     function autoHideHeader() {
         let currentTop = $(window).scrollTop();
 
-        ( belowNavHeroContent.length > 0 )
+        (belowNavHeroContent.length > 0)
             ? checkStickyNavigation(currentTop) // secondary navigation below intro
             : checkSimpleNavigation(currentTop);
 
@@ -47,7 +47,7 @@ $(function() {
         if (previousTop - currentTop > scrollDelta) {
             //if scrolling up...
             mainHeader.removeClass('is-hidden');
-        } else if( currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
+        } else if (currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
             //if scrolling down...
             mainHeader.addClass('is-hidden');
         }
@@ -57,14 +57,14 @@ $(function() {
         //secondary nav below intro section - sticky secondary nav
         let secondaryNavOffsetTop = belowNavHeroContent.offset().top - secondaryNavigation.height() - mainHeader.height();
 
-        if (previousTop >= currentTop ) {
+        if (previousTop >= currentTop) {
             //if scrolling up...
-            if( currentTop < secondaryNavOffsetTop ) {
+            if (currentTop < secondaryNavOffsetTop) {
                 //secondary nav is not fixed
                 mainHeader.removeClass('is-hidden');
                 secondaryNavigation.removeClass('fixed slide-up');
                 belowNavHeroContent.removeClass('secondary-nav-fixed');
-            } else if( previousTop - currentTop > scrollDelta ) {
+            } else if (previousTop - currentTop > scrollDelta) {
                 //secondary nav is fixed
                 mainHeader.removeClass('is-hidden');
                 secondaryNavigation.removeClass('slide-up').addClass('fixed');
@@ -73,12 +73,12 @@ $(function() {
 
         } else {
             //if scrolling down...
-            if( currentTop > secondaryNavOffsetTop + scrollOffset ) {
+            if (currentTop > secondaryNavOffsetTop + scrollOffset) {
                 //hide primary nav
                 mainHeader.addClass('is-hidden');
                 secondaryNavigation.addClass('fixed slide-up');
                 belowNavHeroContent.addClass('secondary-nav-fixed');
-            } else if( currentTop > secondaryNavOffsetTop ) {
+            } else if (currentTop > secondaryNavOffsetTop) {
                 //once the secondary nav is fixed, do not hide primary nav if you haven't scrolled more than scrollOffset
                 mainHeader.removeClass('is-hidden');
                 secondaryNavigation.addClass('fixed').removeClass('slide-up');
@@ -98,14 +98,14 @@ $(function() {
 
     // Header actions
     $('.menu-toggle').on('click', function (e) {
-       $(this).toggleClass('active');
-       $('.main-nav').toggleClass('show');
-       $('.toggle-mask').show();
+        $(this).toggleClass('active');
+        $('.main-nav').toggleClass('show');
+        $('.toggle-mask').show();
     });
 
     $('.login-link').on('click', function (e) {
-       $('.nav-right-slide-click').toggleClass('open');
-       $('.toggle-mask3').show();
+        $('.nav-right-slide-click').toggleClass('open');
+        $('.toggle-mask3').show();
     });
 
     $('.toggle-mask3').on('click', function (e) {
@@ -174,7 +174,7 @@ $(function() {
     });
 
     // Sliders init
-    let addProductsSlider = new Swiper ('.additional-products-slider', {
+    let addProductsSlider = new Swiper('.additional-products-slider', {
         loop: true,
         navigation: {
             nextEl: '.swiper-arrow-next',
@@ -185,7 +185,7 @@ $(function() {
     let heroSlider = new Swiper('.hero-slider', {
         loop: true,
         speed: 700,
-        fadeEffect: { crossFade: true },
+        fadeEffect: {crossFade: true},
         autoplay: {
             delay: 3000,
             disableOnInteraction: true,
@@ -244,7 +244,7 @@ $(function() {
         loop: true,
         speed: 700,
         autoHeight: true,
-        fadeEffect: { crossFade: true },
+        fadeEffect: {crossFade: true},
         autoplay: {
             delay: 3000,
             disableOnInteraction: true,
@@ -257,9 +257,26 @@ $(function() {
         },
     });
 
+    if ($(window).width() <= 991) {
+        let suppliersSlider = new Swiper('.suppliers-slider', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-arrow-next',
+                prevEl: '.swiper-arrow-prev',
+            },
+        });
+    }
+
     // Shop toggle
     $('.shop-arrow').on('click', function () {
-       $(this).closest('.shop-item').toggleClass('active');
+        $(this).closest('.shop-item').toggleClass('active');
+    });
+
+    // Shop toggle
+    $('.contact-form-btn').on('click', function (e) {
+        e.preventDefault();
+        $(this).closest('.contact-col-left').find('.form-wrap').addClass('hide');
+        $(this).closest('.contact-col-left').find('.successfully-message').addClass('show');
     });
 
     // Play/Pause video btn

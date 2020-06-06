@@ -35,6 +35,11 @@ body {
 
 a {
   display: inline-block;
+  word-break: break-word;
+
+  &:hover {
+    color: $medium-carmine;
+  }
 }
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -57,6 +62,16 @@ input[type="number"] {
   margin: 0 auto;
   padding: 0 16px;
   position: relative;
+}
+
+.content-wrapper {
+  max-width: 950px;
+  margin: 0 auto;
+
+  .responsive-img {
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
 }
 
 .responsive-img {
@@ -100,6 +115,11 @@ input[type="number"] {
 .mr-10 { margin-right: 10px }
 .mb-10 { margin-bottom: 10px }
 .ml-10 { margin-left: 10px }
+
+.mt-15 { margin-top: 15px }
+.mr-15 { margin-right: 15px }
+.mb-15 { margin-bottom: 15px }
+.ml-15 { margin-left: 15px }
 
 .mt-20 { margin-top: 20px }
 .mr-20 { margin-right: 20px }
@@ -155,6 +175,12 @@ input[type="number"] {
 .pr-55 { padding-right: 55px }
 .pb-55 { padding-bottom: 55px }
 .pl-55 { padding-left: 55px }
+
+.pt-none-mobile {
+  @media (max-width: $screen-sm) {
+    padding-top: 0 !important;
+  }
+}
 
 .reset-position {
   position: static !important;
@@ -289,6 +315,14 @@ input[type="number"] {
 .hide-mobile {
   @media (max-width: $screen-sm) {
     display: none !important;
+  }
+}
+
+.show-mobile {
+  display: none;
+
+  @media (max-width: $screen-sm) {
+    display: block !important;
   }
 }
 
@@ -453,6 +487,13 @@ input[type="number"] {
 .input-material {
   position: relative;
   margin-bottom: 30px;
+
+  .input-error {
+    position: absolute;
+    top: calc(100% + 5px);
+    font: 14px/16px "GeometriaBold", sans-serif;
+    color: $red;
+  }
 
   input, textarea {
     display: block;
@@ -780,4 +821,23 @@ input[type="number"] {
     height: 100%;
     border-radius: 8px;
   }
+}
+
+.back-btn-wrap {
+  width: 240px;
+  padding: 3px 15px 0 0;
+
+  @media (max-width: $screen-lg) {
+    padding-top: 0;
+    margin-top: -2px;
+    width: 40px;
+
+    .arrow-link {
+      font-size: 0;
+    }
+  }
+}
+
+.content-wrapper-with-back-btn {
+  flex: 1;
 }

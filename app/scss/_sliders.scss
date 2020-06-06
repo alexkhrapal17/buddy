@@ -467,3 +467,37 @@
     text-align: right;
   }
 }
+
+// Suppliers slider
+.suppliers-slider {
+  overflow: hidden;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 50px;
+  }
+
+  .swiper-wrapper {
+    display: block;
+
+    @media (max-width: $screen-md) {
+      display: flex;
+    }
+  }
+
+  .swiper-arrows-wrap {
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+
+    @media (max-width: $screen-md) {
+      display: block;
+    }
+
+    .swiper-arrow-next, .swiper-arrow-prev {
+      position: static;
+      display: inline-block;
+      margin: 0 20px;
+    }
+  }
+}
