@@ -457,3 +457,99 @@
     }
   }
 }
+
+// Loyalty page
+.loyalty-list {
+  display: flex;
+  margin: 0 -15px;
+
+  @media (max-width: $screen-lg) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $screen-xs) {
+    margin: 0;
+  }
+
+  .loyalty-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: url("../img/shop-item-bg.png") no-repeat 50% 50%;
+    width: calc(25% - 30px);
+    background-size: cover;
+    min-height: 150px;
+    padding: 40px;
+    margin: 15px;
+    @include transition(.2s);
+
+    @media (max-width: $screen-lg) {
+      width: calc(50% - 30px);
+    }
+
+    @media (max-width: $screen-xs) {
+      width: 100%;
+      margin: 0 0 30px;
+      align-items: flex-start;
+    }
+
+    &:hover {
+      box-shadow: $shadow2;
+    }
+  }
+}
+
+// Vacancies page
+.vacancies-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+
+  @media (max-width: $screen-sm) {
+    margin: 0;
+  }
+
+  .vacancy-item {
+    padding: 40px 40px 85px;
+    position: relative;
+    margin: 15px;
+    width: calc(50% - 30px);
+    height: 100%;
+    background: $snow;
+    box-shadow: $shadow;
+    border-radius: 8px;
+    @include transition(.3s);
+
+    @media (max-width: $screen-sm) {
+      width: 100%;
+      margin: 0 0 30px;
+      padding: 20px 20px 85px;
+    }
+
+    &:hover {
+      background: $gin-fizz;
+    }
+
+    .vacancy-details-link {
+      h3 {
+        @include transition(.3s);
+
+        &:hover {
+          color: $ripe-lemon;
+        }
+      }
+    }
+
+    .fill-form-btn {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      .btn {
+        border-radius: 8px 0 8px 0;
+      }
+    }
+  }
+}
