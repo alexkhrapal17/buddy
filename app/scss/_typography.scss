@@ -24,6 +24,15 @@ p {
   margin: 0;
 }
 
+ul {
+  padding: 0 0 0 17px;
+  margin: 0;
+
+  li {
+    font: 15px/22px "GeometriaRegular", sans-serif;
+  }
+}
+
 a {
   &:hover {
     text-decoration: none;

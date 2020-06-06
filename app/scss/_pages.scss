@@ -553,3 +553,68 @@
     }
   }
 }
+
+.form-wrapper-vacancy {
+  @include transition(.3s);
+
+  &.hide {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+// Delivery loyalty
+.delivery-banner {
+  min-height: 687px;
+  background: url("../img/pattern-main.png"), url("../img/repeat-sky.png") repeat-x 0 0;
+  background-color: $ripe-lemon;
+  padding: 140px 130px 50px;
+  margin-bottom: 70px;
+
+  @media (max-width: 1600px) {
+    padding: 140px 15px 50px;
+  }
+
+  @media (max-width: $screen-lg) {
+    min-height: initial;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding: 45px 15px 30px;
+    margin-bottom: 35px;
+
+    .d-flex {
+      display: block !important;
+    }
+  }
+}
+
+.delivery-img {
+  width: 930px;
+  margin-right: 120px;
+
+  @media (max-width: 1600px) {
+    margin-right: 50px;
+  }
+
+  @media (max-width: $screen-lg) {
+    flex: 1;
+  }
+
+  @media (max-width: $screen-sm) {
+    width: 100%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.delivery-text {
+  flex: 1;
+
+  @media (max-width: $screen-lg) {
+    flex: none;
+    width: 360px;
+  }
+}

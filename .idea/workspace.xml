@@ -2,25 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fee1305a-935f-4237-b2c4-44c916d651a5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/career.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/delivery.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/landlords.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/loyalty.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/vacancies.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/js/inputmask.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/loyalty-birthday.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/loyalty-bonus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/loyalty-corp-client.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/loyalty-delivery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/vacancy-detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/vacancy-form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/about-us.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/career.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/career.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/contact-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact-us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/delivery.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/delivery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/header2.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/header2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/js/scripts.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/js/scripts.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/landlords.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/landlords.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/links.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/links.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/loyalty.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/loyalty.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/news-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/news-detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/news.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/partners.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/partners.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/_custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/_custom.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/_pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/_pages.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/_vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/_vars.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scss/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/_typography.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/vacancies.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/vacancies.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,8 +47,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/links.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="556">
-                  <caret line="371" column="53" selection-start-line="371" selection-start-column="53" selection-end-line="371" selection-end-column="53" />
+                <state relative-caret-position="1037">
+                  <caret line="455" column="7" selection-start-line="455" selection-start-column="7" selection-end-line="455" selection-end-column="7" />
                   <folding>
                     <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -52,14 +61,54 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/vacancies.html">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/loyalty.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="437">
-                  <caret line="410" column="71" selection-start-line="410" selection-start-column="51" selection-end-line="410" selection-end-column="71" />
+                <state relative-caret-position="1105">
+                  <caret line="413" column="54" selection-start-line="413" selection-start-column="54" selection-end-line="413" selection-end-column="54" />
                   <folding>
                     <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/loyalty-corp-client.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="510">
+                  <caret line="356" column="29" selection-start-line="343" selection-start-column="24" selection-end-line="356" selection-end-column="29" />
+                  <folding>
+                    <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/loyalty-birthday.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="323">
+                  <caret line="360" column="53" selection-start-line="360" selection-start-column="53" selection-end-line="360" selection-end-column="53" />
+                  <folding>
+                    <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/contact-us.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="395">
+                  <caret line="365" column="45" selection-start-line="365" selection-start-column="45" selection-end-line="365" selection-end-column="45" />
+                  <folding>
+                    <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#h2#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
                   </folding>
                 </state>
@@ -72,20 +121,20 @@
         <splitter split-orientation="vertical" split-proportion="0.6515581">
           <split-first>
             <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-              <file pinned="false" current-in-tab="false">
+              <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/scss/_header.scss">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="-774">
-                      <caret line="172" column="1" selection-start-line="172" selection-start-column="1" selection-end-line="172" selection-end-column="1" />
+                    <state relative-caret-position="93">
+                      <caret line="223" column="14" selection-start-line="223" selection-start-column="14" selection-end-line="223" selection-end-column="14" />
                     </state>
                   </provider>
                 </entry>
               </file>
-              <file pinned="false" current-in-tab="true">
+              <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/app/scss/_pages.scss">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="88">
-                      <caret line="510" column="14" selection-start-line="510" selection-start-column="14" selection-end-line="510" selection-end-column="14" />
+                    <state relative-caret-position="275">
+                      <caret line="583" column="24" selection-start-line="583" selection-start-column="24" selection-end-line="583" selection-end-column="24" />
                     </state>
                   </provider>
                 </entry>
@@ -93,8 +142,8 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/app/scss/_custom.scss">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="228">
-                      <caret line="91" column="10" selection-start-line="91" selection-start-column="10" selection-end-line="91" selection-end-column="10" />
+                    <state relative-caret-position="108">
+                      <caret line="225" column="18" selection-start-line="225" selection-start-column="18" selection-end-line="225" selection-end-column="18" />
                     </state>
                   </provider>
                 </entry>
@@ -115,8 +164,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/app/scss/_typography.scss">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="935">
-                      <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+                    <state relative-caret-position="459">
+                      <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
                     </state>
                   </provider>
                 </entry>
@@ -129,11 +178,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>back-btn-wrap</find>
-      <find>back</find>
-      <find>back-b</find>
-      <find>&lt;a href=&quot;#&quot; class=&quot;main-nav-item&quot;&gt;Партнеры&lt;/a&gt;</find>
-      <find>партнеры</find>
       <find>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Партнеры&lt;/a&gt;&lt;/li&gt;</find>
       <find>content-wrapper</find>
       <find>d-flex align-items-center justify-content-between flex-wrap</find>
@@ -159,6 +203,11 @@
       <find>&lt;a href=&quot;#&quot; class=&quot;main-nav-subitem&quot;&gt;Вакансии&lt;/a&gt;</find>
       <find>&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Вакансии&lt;/a&gt;&lt;/li&gt;</find>
       <find>.social-links</find>
+      <find>inpu</find>
+      <find>form-wrapper</find>
+      <find>bread</find>
+      <find>&lt;li&gt;&lt;a href=&quot;loyalty-corp-client.html&quot;&gt;Корпоративный &lt;br&gt; клиент&lt;/a&gt;&lt;/li&gt;</find>
+      <find>&lt;li&gt;&lt;a href=&quot;loyalty-corp-client.html&quot;&gt;Корпоративный клиент&lt;/a&gt;&lt;/li&gt;</find>
     </findStrings>
     <replaceStrings>
       <replace>let</replace>
@@ -178,11 +227,13 @@
       <replace>&lt;li&gt;&lt;a href=&quot;loyalty.html&quot;&gt;Программа лояльности&lt;/a&gt;&lt;/li&gt;</replace>
       <replace>&lt;a href=&quot;career.html&quot; class=&quot;main-nav-subitem&quot;&gt;Карьера&lt;/a&gt;</replace>
       <replace>&lt;li&gt;&lt;a href=&quot;career.html&quot;&gt;Карьера&lt;/a&gt;&lt;/li&gt;</replace>
-      <replace>&lt;a href=&quot;news-detail.html&quot; class=&quot;btn btn-cta&quot;&gt;Подробнее&lt;/a&gt;</replace>
       <replace>&lt;li&gt;&lt;a href=&quot;delivery.html&quot;&gt;Информация о доставке&lt;/a&gt;&lt;/li&gt;</replace>
       <replace>&lt;a href=&quot;delivery.html&quot; class=&quot;main-nav-subitem&quot;&gt;Информация о доставке&lt;/a&gt;</replace>
       <replace>&lt;a href=&quot;vacancies.html&quot; class=&quot;main-nav-subitem&quot;&gt;Вакансии&lt;/a&gt;</replace>
+      <replace>&lt;a href=&quot;news-detail.html&quot; class=&quot;btn btn-cta&quot;&gt;Подробнее&lt;/a&gt;</replace>
       <replace>&lt;li&gt;&lt;a href=&quot;vacancies.html&quot;&gt;Вакансии&lt;/a&gt;&lt;/li&gt;</replace>
+      <replace>&lt;li&gt;&lt;a href=&quot;vacancies.html&quot;&gt;Вакансии&lt;/a&gt;&lt;/li&gt;я</replace>
+      <replace>&lt;li&gt;&lt;a href=&quot;loyalty-corp-client.html&quot;&gt;Корпоративный &lt;br&gt; клиент&lt;/a&gt;&lt;/li&gt;</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\Workspace\buddy\app\libs\bootstrap\scss</dir>
@@ -208,7 +259,6 @@
         <option value="$PROJECT_DIR$/app/scss/_footer.scss" />
         <option value="$PROJECT_DIR$/app/scss/_mixins-custom.scss" />
         <option value="$PROJECT_DIR$/app/scss/main.scss" />
-        <option value="$PROJECT_DIR$/app/scss/_typography.scss" />
         <option value="$PROJECT_DIR$/app/scss/_header.scss" />
         <option value="$PROJECT_DIR$/app/scss/_homepage.scss" />
         <option value="$PROJECT_DIR$/app/index.html" />
@@ -217,19 +267,26 @@
         <option value="$PROJECT_DIR$/app/news-detail.html" />
         <option value="$PROJECT_DIR$/app/scss/_sliders.scss" />
         <option value="$PROJECT_DIR$/app/header2.html" />
-        <option value="$PROJECT_DIR$/app/js/common.js" />
         <option value="$PROJECT_DIR$/app/about-us.html" />
         <option value="$PROJECT_DIR$/app/partners.html" />
-        <option value="$PROJECT_DIR$/app/contact-us.html" />
         <option value="$PROJECT_DIR$/app/landlords.html" />
         <option value="$PROJECT_DIR$/app/scss/_vars.scss" />
-        <option value="$PROJECT_DIR$/app/scss/_custom.scss" />
-        <option value="$PROJECT_DIR$/app/loyalty.html" />
         <option value="$PROJECT_DIR$/app/career.html" />
         <option value="$PROJECT_DIR$/app/delivery.html" />
-        <option value="$PROJECT_DIR$/app/links.html" />
+        <option value="$PROJECT_DIR$/app/scss/_typography.scss" />
+        <option value="$PROJECT_DIR$/app/vacancy-detail.html" />
         <option value="$PROJECT_DIR$/app/vacancies.html" />
+        <option value="$PROJECT_DIR$/app/vacancy-form.html" />
+        <option value="$PROJECT_DIR$/app/js/common.js" />
+        <option value="$PROJECT_DIR$/app/scss/_custom.scss" />
+        <option value="$PROJECT_DIR$/app/loyalty-bonus.html" />
+        <option value="$PROJECT_DIR$/app/loyalty-delivery.html" />
         <option value="$PROJECT_DIR$/app/scss/_pages.scss" />
+        <option value="$PROJECT_DIR$/app/loyalty.html" />
+        <option value="$PROJECT_DIR$/app/links.html" />
+        <option value="$PROJECT_DIR$/app/loyalty-corp-client.html" />
+        <option value="$PROJECT_DIR$/app/loyalty-birthday.html" />
+        <option value="$PROJECT_DIR$/app/contact-us.html" />
       </list>
     </option>
   </component>
@@ -285,6 +342,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Workspace\buddy\app" />
+      <recent name="D:\Workspace\buddy\app\js" />
       <recent name="D:\Workspace\buddy\app\libs\selectric" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -318,12 +376,12 @@
       <workItem from="1591114342648" duration="17784000" />
       <workItem from="1591200544585" duration="16520000" />
       <workItem from="1591285789598" duration="15243000" />
-      <workItem from="1591381382130" duration="27155000" />
+      <workItem from="1591381382130" duration="34767000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92375000" />
+    <option name="totallyTimeSpent" value="99987000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -375,23 +433,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/ht.access" />
-    <entry file="file://$PROJECT_DIR$/app/img/@1x/preview.jpg" />
-    <entry file="file://$PROJECT_DIR$/app/img/_src/preview.jpg" />
-    <entry file="file://$PROJECT_DIR$/app/img/favicon/apple-touch-icon-180x180.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/img/favicon/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/img/@2x/preview.jpg" />
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/libs/bootstrap/scss/bootstrap.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -518,13 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/_typography.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/image 5.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -586,19 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/news-detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="395" column="33" lean-forward="true" selection-start-line="393" selection-start-column="28" selection-end-line="395" selection-end-column="33" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/header2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
@@ -616,19 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/about-us.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="399" column="30" selection-start-line="386" selection-start-column="24" selection-end-line="399" selection-end-column="30" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#1;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/partners.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
@@ -637,23 +645,6 @@
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#div#1;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/contact-us.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="416" column="28" lean-forward="true" selection-start-line="416" selection-start-column="28" selection-end-line="557" selection-end-column="34" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#h2#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -670,28 +661,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="277" column="42" selection-start-line="277" selection-start-column="26" selection-end-line="277" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/_vars.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/loyalty.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="383" column="38" selection-start-line="383" selection-start-column="38" selection-end-line="383" selection-end-column="38" />
-          <folding>
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -706,20 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/_custom.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="91" column="10" selection-start-line="91" selection-start-column="10" selection-end-line="91" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-774">
-          <caret line="172" column="1" selection-start-line="172" selection-start-column="1" selection-end-line="172" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/delivery.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
@@ -731,10 +690,135 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/_typography.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/vacancy-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="413" column="37" lean-forward="true" selection-start-line="413" selection-start-column="37" selection-end-line="413" selection-end-column="54" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/vacancies.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="396" column="58" selection-start-line="396" selection-start-column="58" selection-end-line="396" selection-end-column="58" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/inputmask.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/vacancy-form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="379" column="40" lean-forward="true" selection-start-line="379" selection-start-column="40" selection-end-line="379" selection-end-column="60" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="284" column="68" selection-start-line="284" selection-start-column="68" selection-end-line="284" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/about-us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="421" column="30" lean-forward="true" selection-start-line="410" selection-start-column="24" selection-end-line="421" selection-end-column="30" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/_custom.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="225" column="18" selection-start-line="225" selection-start-column="18" selection-end-line="225" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/loyalty-bonus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="433" column="28" selection-start-line="433" selection-start-column="28" selection-end-line="433" selection-end-column="28" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/_pages.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="583" column="24" selection-start-line="583" selection-start-column="24" selection-end-line="583" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/loyalty-delivery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="455" column="22" selection-start-line="455" selection-start-column="22" selection-end-line="455" selection-end-column="22" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#3;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/news-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="373" column="12" lean-forward="true" selection-start-line="373" selection-start-column="12" selection-end-line="379" selection-end-column="18" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#2;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="223" column="14" selection-start-line="223" selection-start-column="14" selection-end-line="223" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/links.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="371" column="53" selection-start-line="371" selection-start-column="53" selection-end-line="371" selection-end-column="53" />
+        <state relative-caret-position="1037">
+          <caret line="455" column="7" selection-start-line="455" selection-start-column="7" selection-end-line="455" selection-end-column="7" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" />
@@ -746,22 +830,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/vacancies.html">
+    <entry file="file://$PROJECT_DIR$/app/loyalty.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="410" column="71" selection-start-line="410" selection-start-column="51" selection-end-line="410" selection-end-column="71" />
+        <state relative-caret-position="1105">
+          <caret line="413" column="54" selection-start-line="413" selection-start-column="54" selection-end-line="413" selection-end-column="54" />
           <folding>
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/_pages.scss">
+    <entry file="file://$PROJECT_DIR$/app/loyalty-corp-client.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="510" column="14" selection-start-line="510" selection-start-column="14" selection-end-line="510" selection-end-column="14" />
+        <state relative-caret-position="510">
+          <caret line="356" column="29" selection-start-line="343" selection-start-column="24" selection-end-line="356" selection-end-column="29" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/loyalty-birthday.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="360" column="53" selection-start-line="360" selection-start-column="53" selection-end-line="360" selection-end-column="53" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/contact-us.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="365" column="45" selection-start-line="365" selection-start-column="45" selection-end-line="365" selection-end-column="45" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#h2#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

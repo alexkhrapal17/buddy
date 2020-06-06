@@ -272,11 +272,18 @@ $(function () {
         $(this).closest('.shop-item').toggleClass('active');
     });
 
-    // Shop toggle
+    // Contact form
     $('.contact-form-btn').on('click', function (e) {
         e.preventDefault();
         $(this).closest('.contact-col-left').find('.form-wrap').addClass('hide');
         $(this).closest('.contact-col-left').find('.successfully-message').addClass('show');
+    });
+
+    // Vacancy form
+    $('.vacancy-form-btn').on('click', function (e) {
+        e.preventDefault();
+        $(this).closest('.form-wrapper').find('.form-wrapper-vacancy').addClass('hide');
+        $(this).closest('.form-wrapper').find('.successfully-message').addClass('show');
     });
 
     // Play/Pause video btn
@@ -289,4 +296,7 @@ $(function () {
             $(this).children(".playpause").show();
         }
     });
+
+    // Phone mask
+    $("#tel").inputmask({"mask": "+380 (99) 999-99-99"});
 });
