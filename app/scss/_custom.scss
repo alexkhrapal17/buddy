@@ -18,6 +18,46 @@ body {
   &.ripe-lemon-bg {
     background-color: $ripe-lemon;
   }
+
+  @media (max-width: $screen-sm) {
+    &.hidden {
+      overflow: hidden;
+    }
+  }
+}
+
+.subscribe-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 30px;
+  transform: translateY(-50%);
+  width: 120px;
+  cursor: pointer;
+  z-index: 1000;
+  user-select: none;
+
+  @media (max-width: $screen-sm) {
+    left: 15px;
+    width: 50px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  &:hover {
+    .title {
+      color: $rock;
+    }
+  }
+
+  .title {
+    @include transition(.2s);
+
+    @media (max-width: $screen-lg) {
+      display: none;
+    }
+  }
 }
 
 .links {
@@ -523,7 +563,7 @@ input[type="number"] {
 // Input styles
 .input-material {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 
   .input-error {
     position: absolute;
@@ -554,6 +594,8 @@ input[type="number"] {
   }
 
   textarea {
+    overflow: hidden;
+
     @media (max-width: $screen-sm) {
       min-height: 44px;
     }
@@ -581,6 +623,32 @@ input[type="number"] {
 }
 
 .checkbox {
+  &.alert-checkbox {
+    input {
+      display: none;
+
+      &:checked {
+        + .checkbox-label {
+          .check-icon {
+            background: $snow;
+          }
+        }
+      }
+    }
+
+    .checkbox-label {
+      color: $snow;
+
+      .check-icon {
+        background: $snow;
+
+        &:after {
+          color: $hurricane;
+        }
+      }
+    }
+  }
+
   input {
     display: none;
 
@@ -605,6 +673,7 @@ input[type="number"] {
     line-height: 22px;
     position: relative;
     padding-left: 35px;
+    user-select: none;
 
     .check-icon {
       position: absolute;
@@ -713,6 +782,16 @@ input[type="number"] {
       cursor: not-allowed;
       background: $hurricane;
       border-color: $hurricane;
+    }
+  }
+
+  &.btn-gray {
+    background: $hurricane;
+    border-color: $hurricane;
+    color: $snow;
+
+    &:hover {
+      opacity: .8;
     }
   }
 
@@ -962,6 +1041,7 @@ input[type="number"] {
 // Modals
 .modal-backdrop {
   z-index: 10000;
+  background: rgba(0, 0, 0, .5);
 }
 
 .modal-wrapper {
@@ -1114,6 +1194,169 @@ input[type="number"] {
   .selectric-items {
     left: -2px;
     width: calc(100% + 4px) !important;
+  }
+}
+
+.subscribe-modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10001;
+  @include transition(.3s);
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .subscribe-modal-body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 30px 0 30px 15px;
+
+    @media (max-width: $screen-sm) {
+      justify-content: flex-start;
+    }
+
+    @media (max-width: $screen-xs) {
+      padding: 30px 15px;
+    }
+  }
+
+  .subscribe-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10000px;
+    background: rgba(0, 0, 0, .33);
+    opacity: 0;
+    visibility: hidden;
+    @include transition(.3s);
+
+    &.show {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  .subscribe-modal-dialog {
+    background: $snow;
+    padding: 40px;
+    border-radius: 8px 0 0 8px;
+    position: relative;
+    z-index: 10;
+    width: 420px;
+    box-shadow: $shadow;
+    transform: translateX(100%);
+    @include transition(.3s);
+
+    @media (max-width: $screen-xs) {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    &.show {
+      transform: translateX(0);
+    }
+
+    .subscribe-modal-close {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      cursor: pointer;
+      font-size: 25px;
+      line-height: 25px;
+      color: $medium-carmine;
+    }
+  }
+}
+
+.alert-modal {
+  position: fixed;
+  bottom: 0;
+  right: 50px;
+  background: rgba($cod-gray, 0.73);
+  border-radius: 8px 8px 0 0;
+  padding: 20px;
+  width: 370px;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  @include transition(.3s);
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @media (max-width: $screen-sm) {
+    width: calc(100% - 30px);
+    right: 15px;
+    left: 15px;
+  }
+
+  .alert-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    line-height: 25px;
+    color: $snow;
+    cursor: pointer;
+  }
+
+  .alert-title {
+    padding-right: 30px;
+  }
+}
+
+.alert-btn {
+  display: inline-block;
+  vertical-align: middle;
+  width: 66px;
+  height: 66px;
+  border-radius: 8px;
+  margin-left: 20px;
+  cursor: pointer;
+  position: relative;
+  @include transition(.3s);
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:after {
+    font: 30px/30px "Material Design Icons", sans-serif;
+    color: $snow;
+    @include center(both);
+  }
+
+  &.cancel {
+    background: $red;
+
+    &:after {
+      content: "\F0156";
+    }
+  }
+
+  &.ok {
+    background: $green;
+
+    &:after {
+      content: "\F012C";
+    }
   }
 }
 

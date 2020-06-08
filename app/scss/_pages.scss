@@ -969,3 +969,101 @@
     flex: 1;
   }
 }
+
+// Catalog page
+.catalog-filters {
+  padding: 150px 0 90px;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  @media (max-width: $screen-sm) {
+    padding: 50px 0;
+  }
+}
+
+.filters-wrapper {
+  .filter-checkbox {
+    margin: 0 10px;
+  }
+}
+
+.filters-top {
+  @media (max-width: $screen-sm) {
+    overflow: auto;
+    margin: 0 -15px;
+  }
+
+  .filters-top-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: $screen-sm) {
+      width: 1000px;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+  }
+}
+
+.filter-checkbox {
+  input {
+    display: none;
+
+    &:checked {
+      + .filter-checkbox-label {
+        background: $gin-fizz;
+
+        p {
+          color: $medium-carmine;
+        }
+
+        .filter-check-icon {
+          border-color: transparent;
+
+          &:before {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+
+  .filter-checkbox-label {
+    border-radius: 8px;
+    background: $medium-carmine;
+    padding: 10px 13px;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    @include transition(.2s);
+
+    p {
+      color: $ripe-lemon;
+      @include transition(.2s);
+    }
+
+    .filter-check-icon {
+      width: 18px;
+      height: 18px;
+      margin-left: 13px;
+      border: 1px solid $ripe-lemon;
+      border-radius: 3px;
+      position: relative;
+      @include transition(.2s);
+
+      &:before {
+        content: "\F012C";
+        font: 22px/21px "Material Design Icons", sans-serif;
+        color: $medium-carmine;
+        opacity: 0;
+        visibility: hidden;
+        @include transition(.2s);
+        @include center(both);
+      }
+    }
+  }
+}

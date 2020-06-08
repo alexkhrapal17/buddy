@@ -1,5 +1,32 @@
 $(function () {
 
+    // Subscribe modal
+    $('.subscribe-wrapper').on('click', function () {
+        $('body').addClass('hidden');
+        $('.subscribe-modal-wrapper').addClass('show');
+        $('.subscribe-mask').addClass('show');
+        $('.subscribe-modal-dialog').addClass('show');
+    });
+    $('.subscribe-mask').on('click', function () {
+        $('body').removeClass('hidden');
+        $('.subscribe-modal-wrapper').removeClass('show');
+        $('.subscribe-mask').removeClass('show');
+        $('.subscribe-modal-dialog').removeClass('show');
+    });
+    $('.subscribe-modal-close').on('click', function () {
+        $('body').removeClass('hidden');
+        $('.subscribe-modal-wrapper').removeClass('show');
+        $('.subscribe-mask').removeClass('show');
+        $('.subscribe-modal-dialog').removeClass('show');
+    });
+
+
+    // Alert close
+    $('.alert-close').on('click', function () {
+        $(this).closest('.alert-modal').removeClass('show');
+    });
+
+
     // Fixed header
     let mainHeader = $('.main-header'),
         secondaryNavigation = $('.cd-secondary-nav'),
@@ -109,7 +136,7 @@ $(function () {
         $('.toggle-mask3').show();
     });
 
-    $('.basket-toggle-2').on('click', function (e) {
+    $('.basket-toggle-2').on('click', function () {
         $('.nav-right-slide-click').toggleClass('open');
         $('.toggle-mask3').show();
     });
