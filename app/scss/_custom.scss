@@ -23,13 +23,13 @@ body {
 .links {
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  left: 20px;
   background: $medium-carmine-hover;
   padding: 10px 20px;
   border-radius: 4px;
   text-align: center;
   box-shadow: $shadow;
-  z-index: 1000;
+  z-index: 10000;
 
   a {
     color: $snow;
@@ -39,6 +39,10 @@ body {
       color: $snow;
     }
   }
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 a {
@@ -99,6 +103,7 @@ input[type="number"] {
     line-height: 25px;
     color: $rock;
     width: 40px;
+    z-index: 100;
     padding-right: 15px;
   }
 }
@@ -216,6 +221,7 @@ input[type="number"] {
 
 .bread-crumbs {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 10px;
 
@@ -547,6 +553,12 @@ input[type="number"] {
     }
   }
 
+  textarea {
+    @media (max-width: $screen-sm) {
+      min-height: 44px;
+    }
+  }
+
   .input-label {
     display: block;
     position: absolute;
@@ -562,9 +574,57 @@ input[type="number"] {
   }
 }
 
-#tel {
+#tel, #time {
   @include input-placeholder {
     opacity: 0;
+  }
+}
+
+.checkbox {
+  input {
+    display: none;
+
+    &:checked {
+      + .checkbox-label {
+        .check-icon {
+          background: $medium-carmine;
+
+          &:after {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+
+  .checkbox-label {
+    margin: 0;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 22px;
+    position: relative;
+    padding-left: 35px;
+
+    .check-icon {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 19px;
+      height: 19px;
+      background: $hurricane;
+      border-radius: 3px;
+
+      &:after {
+        content: "\F012C";
+        font: 15px/19px "Material Design Icons", sans-serif;
+        color: $snow;
+        opacity: 0;
+        visibility: hidden;
+        @include transition(.2s);
+        @include center(both);
+      }
+    }
   }
 }
 
@@ -587,7 +647,7 @@ input[type="number"] {
   align-items: center;
   justify-content: center;
   border:  2px solid $medium-carmine ;
-  padding: 15px;
+  padding: 10px 15px;
   border-radius: 8px;
   min-width: 215px;
   min-height: 60px;
@@ -600,10 +660,16 @@ input[type="number"] {
     transform: scale(.98);
   }
 
-  .mdi, img {
+  .mdi, img, svg {
     margin-right: 30px;
     font-size: 28px;
     line-height: 28px;
+  }
+
+  svg {
+    path {
+      @include transition(.2s);
+    }
   }
 
   &.stretched {
@@ -629,16 +695,24 @@ input[type="number"] {
       color: $snow;
       background: $medium-carmine-hover;
       border-color: $medium-carmine-hover;
+
+      svg {
+        path {
+          fill: $snow;
+        }
+      }
     }
   }
 
-  &.btn-disable {
+  &[disabled] {
     background: $hurricane;
     border-color: $hurricane;
     color: $snow;
 
     &:hover {
       cursor: not-allowed;
+      background: $hurricane;
+      border-color: $hurricane;
     }
   }
 
@@ -883,4 +957,272 @@ input[type="number"] {
   max-width: 337px;
   margin: 0 auto;
   position: relative;
+}
+
+// Modals
+.modal-backdrop {
+  z-index: 10000;
+}
+
+.modal-wrapper {
+  z-index: 10001;
+
+  .modal-dialog {
+    max-width: 680px;
+  }
+
+  .modal-content {
+    border: none;
+    border-radius: 8px;
+    padding: 30px;
+
+    @media (max-width: $screen-sm) {
+      padding: 30px 20px;
+    }
+
+    .close-modal {
+      position: absolute;
+      top: 29px;
+      right: 20px;
+
+      .mdi {
+        font-size: 25px;
+        line-height: 25px;
+        color: $medium-carmine;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.basket-product-item {
+  margin-bottom: 20px;
+
+  .basket-product-img {
+    width: 50px;
+    margin-right: 40px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .baskter-product-right {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $screen-sm) {
+      display: block;
+    }
+
+    p {
+      &:first-child {
+        flex: 1;
+      }
+
+      &:last-child {
+        width: 100px;
+
+        @media (max-width: $screen-sm) {
+          width: auto;
+          text-align: left !important;
+          color: $medium-carmine;
+        }
+      }
+    }
+  }
+}
+
+.choose-bottle-row {
+  display: flex;
+
+  @media (max-width: $screen-sm) {
+    display: block;
+  }
+
+  .choose-bottle-product-img {
+    width: 75px;
+    margin-right: 20px;
+
+    @media (max-width: $screen-sm) {
+      width: 100px;
+      margin-right: 0;
+      margin: 0 auto 20px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .choose-bottle-product-info {
+    flex: 1;
+  }
+}
+
+.choose-bottle-select {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 20px;
+  }
+
+  .choose-select-icon {
+    width: 12px;
+    margin-right: 15px;
+  }
+}
+
+.select-bottle-wrapper {
+  &.selected {
+    .selectric-select-bottle {
+      border-color: $medium-carmine;
+    }
+
+    .selectric {
+      .label {
+        color: $medium-carmine;
+      }
+
+      .button {
+        &:after {
+          border-top-color: $medium-carmine;
+        }
+      }
+    }
+  }
+
+  .selectric-select-bottle {
+    border: 2px solid $hurricane;
+    border-radius: 8px;
+    padding: 0 5px 0 15px;
+
+    &.selectric-open {
+      border-radius: 8px 8px 0 0;
+    }
+  }
+
+  .selectric {
+    .label {
+      min-width: 35px;
+    }
+  }
+
+  .selectric-items {
+    left: -2px;
+    width: calc(100% + 4px) !important;
+  }
+}
+
+// Tabs
+.nav-tabs {
+  margin-top: 30px;
+  border: none;
+
+  @media (max-width: $screen-sm) {
+    margin-top: 0;
+  }
+
+  .nav-item {
+    margin: 0 25px;
+
+    @media (max-width: $screen-sm) {
+      margin: 0 5px;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .nav-link {
+      border: none;
+      font: 18px/18px "GeometriaBold", sans-serif;
+      text-transform: uppercase;
+      color: $hurricane;
+      padding: 0;
+      position: relative;
+
+      @media (max-width: $screen-sm) {
+        width: 95px;
+        font-size: 15px;
+      }
+
+      &:hover {
+        color: $medium-carmine;
+      }
+
+      &.active {
+        color: $medium-carmine;
+
+        &:after {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: $medium-carmine;
+        opacity: 0;
+        visibility: hidden;
+        @include transition(.3s);
+      }
+    }
+  }
+}
+
+.history-table {
+  background: $snow;
+  border-radius: 8px;
+  box-shadow: $shadow;
+  max-width: 1170px;
+  margin: 0 auto;
+  overflow-x: auto;
+
+  table {
+    width: 1170px;
+    border-collapse: collapse;
+
+    @media (max-width: $screen-md) {
+      width: 870px;
+    }
+
+    tr {
+      border-bottom: 1px solid rgba($hurricane, .33);
+    }
+
+    tbody {
+      tr {
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+
+    th {
+      font: 18px/18px "GeometriaBold", sans-serif;
+      color: $medium-carmine;
+      padding: 20px 30px;
+    }
+
+    td {
+      padding: 10px 30px;
+      font-size: 15px;
+      line-height: 22px;
+      color: $rock;
+    }
+  }
 }

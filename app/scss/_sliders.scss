@@ -18,7 +18,8 @@
 }
 
 // Additional slider header right slide
-.additional-products-slider {
+.additional-products-slider,
+.additional-products-slider2 {
   overflow: hidden;
   position: relative;
 
@@ -468,8 +469,8 @@
   }
 }
 
-// Suppliers slider
-.suppliers-slider {
+// Suppliers and Reviews sliders
+.suppliers-slider, .product-reviews-slider {
   overflow: hidden;
 
   @media (max-width: $screen-md) {
@@ -492,6 +493,7 @@
 
     @media (max-width: $screen-md) {
       display: block;
+      margin-right: 30px;
     }
 
     .swiper-arrow-next, .swiper-arrow-prev {

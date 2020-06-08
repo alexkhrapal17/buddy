@@ -91,6 +91,7 @@ $(function () {
 
     // Selects
     $('.select-lang').selectric();
+    $('.select-bottle').selectric();
     $('.select-city').selectric({
         maxHeight: 400
     });
@@ -104,6 +105,11 @@ $(function () {
     });
 
     $('.login-link').on('click', function (e) {
+        $('.nav-right-slide-click').toggleClass('open');
+        $('.toggle-mask3').show();
+    });
+
+    $('.basket-toggle-2').on('click', function (e) {
         $('.nav-right-slide-click').toggleClass('open');
         $('.toggle-mask3').show();
     });
@@ -265,7 +271,38 @@ $(function () {
                 prevEl: '.swiper-arrow-prev',
             },
         });
+
+        let productReviewsSlider = new Swiper('.product-reviews-slider', {
+            loop: true,
+            autoHeight: true,
+            navigation: {
+                nextEl: '.swiper-arrow-next',
+                prevEl: '.swiper-arrow-prev',
+            },
+        });
     }
+
+    $('#basket-modal').on('shown.bs.modal', function (e) {
+        let addProductsSlider2 = new Swiper('.additional-products-slider2', {
+            loop: true,
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.swiper-arrow-next',
+                prevEl: '.swiper-arrow-prev',
+            },
+            breakpoints: {
+                767: {
+                    slidesPerView: 3,
+                },
+            }
+        });
+    });
+
+    /*if ($(window).width() <= 575) {
+        $('.product-card-desc .title').on('click', function () {
+            $('.desc-wrapper').toggle();
+        });
+    }*/
 
     // Shop toggle
     $('.shop-arrow').on('click', function () {
@@ -286,6 +323,13 @@ $(function () {
         $(this).closest('.form-wrapper').find('.successfully-message').addClass('show');
     });
 
+    // Review form
+    $('.review-form-btn').on('click', function (e) {
+        e.preventDefault();
+        $(this).closest('.reviews-form-wrapper').find('.form-wrapper-reviews').addClass('hide');
+        $(this).closest('.reviews-form-wrapper').find('.successfully-message').addClass('show');
+    });
+
     // Play/Pause video btn
     $('.video').parent().click(function () {
         if ($(this).children(".video").get(0).paused) {
@@ -299,4 +343,6 @@ $(function () {
 
     // Phone mask
     $("#tel").inputmask({"mask": "+380 (99) 999-99-99"});
+    $("#tel2").inputmask({"mask": "+380 (99) 999-99-99"});
+    $("#time").inputmask({"mask": "99:99"});
 });

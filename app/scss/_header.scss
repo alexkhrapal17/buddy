@@ -1,6 +1,6 @@
 .main-header {
   position: fixed;
-  z-index: 1000;
+  z-index: 10000;
   top: 0;
   left: 0;
   width: 100%;
@@ -250,6 +250,7 @@
 .basket-wrapper {
   position: relative;
   z-index: 3;
+  margin-left: -200px;
   transform: translateX(230px);
   @include transition(.4s);
 
@@ -290,6 +291,40 @@
       }
     }
   }
+
+  &.basket-order-page {
+    @media (min-width: $screen-lg) {
+      transform: translateX(0);
+      margin-left: -310px;
+    }
+
+    .basket-toggle, .order-button {
+      @media (min-width: $screen-lg) {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    .nav-right-slide {
+      @media (min-width: $screen-lg) {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+}
+
+.basket-toggle-2 {
+  display: none;
+
+  @media (max-width: $screen-lg) {
+    display: block;
+    width: 100px !important;
+  }
+}
+
+.add-form {
+  padding: 20px;
 }
 
 .order-button {
@@ -617,20 +652,16 @@
     position: relative;
     z-index: 2;
 
-    &.login-link {
-      margin-right: 35px;
+    @media (max-width: $screen-lg) {
+      z-index: 100;
+    }
 
-      @media (max-width: $screen-sm) {
-        padding-top: 5px;
-        margin-right: 10px;
-      }
+    @media (max-width: $screen-sm) {
+      margin-right: 85px;
     }
 
     &.acc-link {
-      @include center(vertical);
-      right: 130px;
-
-      @media (max-width: $screen-md) {
+      @media (max-width: $screen-sm) {
         display: none;
       }
     }
@@ -640,7 +671,7 @@
     max-width: 200px;
     margin-right: 38px;
 
-    @media (max-width: $screen-sm) {
+    @media (max-width: $screen-lg) {
       display: none;
     }
   }

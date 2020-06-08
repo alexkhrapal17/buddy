@@ -1,6 +1,10 @@
 // Home page
 .catalog {
   padding-bottom: 85px;
+
+  @media (max-width: $screen-sm) {
+    padding-bottom: 50px;
+  }
 }
 
 .reviews-slider-wrap {
@@ -554,7 +558,8 @@
   }
 }
 
-.form-wrapper-vacancy {
+.form-wrapper-vacancy,
+.form-wrapper-reviews {
   @include transition(.3s);
 
   &.hide {
@@ -616,5 +621,351 @@
   @media (max-width: $screen-lg) {
     flex: none;
     width: 360px;
+  }
+}
+
+// Product card page
+.product-card-main-wrapper {
+  position: relative;
+
+  @media (max-width: $screen-sm) {
+    padding-left: 40px;
+  }
+
+  .back-btn-mobile {
+    top: 31px;
+    left: 16px;
+  }
+}
+
+.product-card-top-info {
+  padding: 107px 0 90px;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: rgba($snow, .73);
+  backdrop-filter: blur(20px);
+  margin-bottom: 60px;
+
+  @media (max-width: $screen-sm) {
+    margin-left: -40px;
+    padding: 30px 0 30px 40px;
+  }
+}
+
+.product-card-row {
+  display: flex;
+
+  @media (max-width: $screen-sm) {
+    display: block;
+  }
+
+  .product-card-left {
+    width: 500px;
+    margin-right: 120px;
+    text-align: center;
+    padding-left: 95px;
+    min-height: 150px;
+    position: relative;
+
+    @media (max-width: $screen-lg) {
+      margin-right: 30px;
+    }
+
+    @media (max-width: $screen-sm) {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .product-add-info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+
+      .share-btn {
+        display: block;
+        margin-top: 30px;
+
+        &:hover {
+          .mdi {
+            color: $rock;
+          }
+        }
+
+        .mdi {
+          font-size: 25px;
+          line-height: 25px;
+          color: $medium-carmine;
+          @include transition(.2s);
+        }
+      }
+    }
+  }
+
+  .product-card-right {
+    flex: 1;
+
+    .product-rating {
+      .mdi {
+        font-size: 25px;
+        line-height: 25px;
+        margin-right: 7px;
+        color: $medium-carmine;
+      }
+    }
+
+    .characteristic-wrapper {
+      max-width: 600px;
+    }
+
+    .product-card-controls {
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 1440px) {
+        display: block;
+      }
+
+      .product-card-controls-right {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: $screen-xs) {
+          display: block;
+        }
+
+        .btn {
+          @media (max-width: $screen-xs) {
+            margin: 0 auto 20px;
+          }
+
+          &:first-child {
+            margin-right: 30px;
+
+            @media (max-width: $screen-xs) {
+              margin-right: auto;
+            }
+          }
+        }
+      }
+    }
+
+    .product-card-desc {
+      .desc-wrapper {
+        max-height: 300px;
+        overflow-y: auto;
+      }
+    }
+  }
+}
+
+.product-card-controls-left {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+
+  @media (max-width: 1440px) {
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $screen-xs) {
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  .product-card-price {
+    margin-right: 30px;
+  }
+
+  .product-card-counter {
+    border: 2px solid $medium-carmine;
+    border-radius: 8px;
+    padding: 16px 20px;
+  }
+}
+
+.product-card-reviews-row {
+  display: flex;
+  margin-bottom: 130px;
+
+  @media (max-width: $screen-sm) {
+    display: block;
+    margin-bottom: 40px;
+  }
+
+  .product-card-reviews-left {
+    width: 440px;
+    margin-right: 180px;
+
+    @media (max-width: $screen-lg) {
+      margin-right: 30px;
+    }
+
+    @media (max-width: $screen-md) {
+      width: 50%;
+    }
+
+    @media (max-width: $screen-sm) {
+      width: 100%;
+    }
+  }
+
+  .product-card-reviews-right {
+    flex: 1;
+
+    @media (max-width: $screen-md) {
+      width: 50%;
+      flex: none;
+    }
+
+    @media (max-width: $screen-sm) {
+      width: 100%;
+    }
+  }
+}
+
+.reviews-form-wrapper {
+  position: relative;
+}
+
+.review-rating {
+  border: none;
+  margin-left: 15px;
+
+  > {
+    input {
+      display: none;
+
+      &:checked {
+        ~ label {
+          color: $ripe-lemon;
+        }
+      }
+    }
+
+    label {
+      color: $hurricane;
+      margin: 0;
+      float: right;
+      cursor: pointer;
+
+      &:before {
+        margin: 5px;
+        font: normal normal normal 24px/1 "Material Design Icons";
+        display: inline-block;
+        content: "\F04CE";
+      }
+    }
+  }
+
+  &:not(:checked) > label:hover {
+    color: $ripe-lemon;
+
+    ~ label {
+      color: $ripe-lemon;
+    }
+  }
+}
+
+.product-review-item {
+  margin-bottom: 30px;
+
+  .product-review-author {
+    margin-right: 20px;
+
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+
+  .product-review-info {
+    flex: 1;
+
+    .product-rating-star {
+      font-size: 25px;
+      line-height: 25px;
+    }
+  }
+}
+
+.product-review-text {
+  padding-left: 100px;
+
+  @media (max-width: $screen-sm) {
+    padding-left: 0;
+  }
+}
+
+.product-card-popular-products {
+  @media (max-width: $screen-sm) {
+    margin-left: -40px;
+  }
+}
+
+// Login pages
+.login-message {
+  padding: 30px 25px;
+  background: $snow;
+  text-align: center;
+  box-shadow: $shadow;
+  margin-bottom: 20px;
+
+  @media (min-width: $screen-sm) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 260px;
+  }
+}
+
+// Thank you message
+.thank-you-message {
+  max-width: 460px;
+  margin: 0 auto;
+  min-height: calc(100vh - 210px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: $screen-md) {
+    min-height: calc(100vh - 165px);
+  }
+}
+
+// Account page
+.bonuses-wrapper {
+  max-width: 460px;
+  margin: 0 auto;
+  box-shadow: $shadow;
+  background: $snow;
+  border-radius: 8px;
+}
+
+.bonuses-row {
+  padding: 15px;
+  border-bottom: 1px solid rgba($hurricane, .33);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .bonus-number {
+    font-size: 48px;
+    line-height: 60px;
+    margin-right: 20px;
+    width: 140px;
+  }
+
+  .bonus-label {
+    flex: 1;
   }
 }
