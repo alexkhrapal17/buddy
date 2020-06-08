@@ -2,97 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fee1305a-935f-4237-b2c4-44c916d651a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/about-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/about-us.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/career.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/career.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/contact-us.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact-us.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/css/main.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/delivery.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/delivery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/header2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/add-img1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/add-img1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/avatar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/bonus-img1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/bonus-img1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/bonus-img2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/bonus-img2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/captcha-placeholder.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/captcha-placeholder.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/cards.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/cards.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/career-img1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/career-img1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/career-img2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/career-img2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/catalog-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/catalog-bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/delivery-img.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/delivery-img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/dnipro.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/dnipro.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/hero-slider.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/hero-slider.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/img1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/img1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/img2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/img2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/map-placeholder.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/map-placeholder.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/news-detail-img1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/news-detail-img1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/news-detail-img2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/news-detail-img2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/news-detail.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/news-detail.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/news-img.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/news-img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/news-img1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/news-img1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/news-img3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/news-img3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/news-img4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/news-img4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/pattern-main.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/pattern-main.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/pattern2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/pattern2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/pop-prod1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/pop-prod1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/prod-img1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/prod-img1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/prod-img2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/prod-img2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/prod-img3.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/prod-img3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/prod-img4.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/prod-img4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/product-card-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/product-card-bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/product-card-image.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/product-card-image.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/product-review-img1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/product-review-img1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/product-review-img2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/product-review-img2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/repeat-sky.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/repeat-sky.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/shop-img1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/shop-img1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/shop-img2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/shop-img2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/shop-img3.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/shop-img3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/shop-img4.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/shop-img4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/shop-img6.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/shop-img6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/shop-img7.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/shop-img7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/shop-img8.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/shop-img8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/shop-img9.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/shop-img9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/shop-item-bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/shop-item-bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/staff-img1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/staff-img1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/staff-img2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/staff-img2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/staff-img3.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/staff-img3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/supplier-img1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/supplier-img1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/supplier-img10.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/supplier-img10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/supplier-img11.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/supplier-img11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/supplier-img12.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/supplier-img12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/supplier-img2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/supplier-img2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/supplier-img3.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/supplier-img3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/supplier-img4.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/supplier-img4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/supplier-img5.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/supplier-img5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/supplier-img6.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/supplier-img6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/supplier-img7.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/supplier-img7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/img/supplier-img8.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/img/supplier-img8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/landlords.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/landlords.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/links.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/links.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/loyalty-birthday.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/loyalty-birthday.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/loyalty-bonus.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/loyalty-bonus.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/loyalty-corp-client.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/loyalty-corp-client.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/loyalty-delivery.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/loyalty-delivery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/loyalty.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/loyalty.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/news-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/news-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/news.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/order-form-logged.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/order-form-logged.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/order-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/order-form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/partners.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/partners.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/product-card.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/product-card.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/registration-successful.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/registration-successful.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/registration.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/_custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/_custom.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/scss/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/scss/_pages.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/scss/_pages.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/shop.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styleguide.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/styleguide.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/thank-you.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/thank-you.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vacancies.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/vacancies.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vacancy-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/vacancy-detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/vacancy-form.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/vacancy-form.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -212,11 +124,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/scss/_header.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="362">
-                  <caret line="135" column="31" selection-start-line="135" selection-start-column="31" selection-end-line="135" selection-end-column="31" />
+                <state relative-caret-position="515">
+                  <caret line="720" column="21" selection-start-line="720" selection-start-column="21" selection-end-line="720" selection-end-column="21" />
                 </state>
               </provider>
             </entry>
@@ -248,11 +160,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/scss/_custom.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="209">
-                  <caret line="691" column="36" selection-start-line="691" selection-start-column="36" selection-end-line="691" selection-end-column="36" />
+                <state relative-caret-position="559">
+                  <caret line="1493" column="24" selection-start-line="1493" selection-start-column="24" selection-end-line="1493" selection-end-column="24" />
                 </state>
               </provider>
             </entry>
@@ -281,7 +193,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mask3</find>
       <find>acc-li</find>
       <find>icon-text</find>
       <find>login-message</find>
@@ -311,6 +222,7 @@
       <find>.check-icon</find>
       <find>invert</find>
       <find>deliver</find>
+      <find>sub-</find>
     </findStrings>
     <replaceStrings>
       <replace>let</replace>
@@ -400,10 +312,10 @@
         <option value="$PROJECT_DIR$/app/scss/_vars.scss" />
         <option value="$PROJECT_DIR$/app/js/common.js" />
         <option value="$PROJECT_DIR$/app/styleguide.html" />
-        <option value="$PROJECT_DIR$/app/scss/_custom.scss" />
         <option value="$PROJECT_DIR$/app/links.html" />
         <option value="$PROJECT_DIR$/app/scss/_pages.scss" />
         <option value="$PROJECT_DIR$/app/scss/_header.scss" />
+        <option value="$PROJECT_DIR$/app/scss/_custom.scss" />
       </list>
     </option>
   </component>
@@ -494,18 +406,18 @@
       <workItem from="1591200544585" duration="16520000" />
       <workItem from="1591285789598" duration="15243000" />
       <workItem from="1591381382130" duration="34834000" />
-      <workItem from="1591515419032" duration="39560000" />
+      <workItem from="1591515419032" duration="40997000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139614000" />
+    <option name="totallyTimeSpent" value="141051000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16126901" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16126901" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="npm" order="3" side_tool="true" />
@@ -1073,13 +985,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scss/_custom.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="691" column="36" selection-start-line="691" selection-start-column="36" selection-end-line="691" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/_pages.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -1089,8 +994,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="135" column="31" selection-start-line="135" selection-start-column="31" selection-end-line="135" selection-end-column="31" />
+        <state relative-caret-position="515">
+          <caret line="720" column="21" selection-start-line="720" selection-start-column="21" selection-end-line="720" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scss/_custom.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="1493" column="24" selection-start-line="1493" selection-start-column="24" selection-end-line="1493" selection-end-column="24" />
         </state>
       </provider>
     </entry>

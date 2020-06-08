@@ -654,14 +654,18 @@
     @include transition(.4s);
     cursor: pointer;
     position: relative;
-    z-index: 100;
-
-    @media (max-width: $screen-lg) {
-      z-index: 2;
-    }
+    z-index: 2;
 
     @media (max-width: $screen-sm) {
       margin-right: 85px;
+    }
+
+    &.login-link {
+      z-index: 100;
+
+      @media (max-width: $screen-lg) {
+        z-index: 2;
+      }
     }
 
     &.acc-link {
@@ -708,12 +712,13 @@
     cursor: pointer;
 
     @media (max-width: 1600px) {
-      margin: 0 25px;
+      margin: 0 35px;
     }
 
     @media (max-width: $screen-lg) {
       font-size: 14px;
       line-height: 16px;
+      margin: 0 25px;
     }
 
     > a {

@@ -1476,3 +1476,22 @@ input[type="number"] {
     }
   }
 }
+
+// IE styles
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body {
+    display: block;
+
+    .news-slide .inner-wrapper {
+      padding: 150px 15px;
+    }
+
+    .news-detail-banner .inner-wrapper {
+      padding: 150px 15px;
+    }
+
+    .btn {
+      padding: 18px 15px;
+    }
+  }
+}
