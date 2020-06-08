@@ -28,9 +28,8 @@ body {
 
 .subscribe-wrapper {
   position: fixed;
-  top: 50%;
+  bottom: 150px;
   left: 30px;
-  transform: translateY(-50%);
   width: 120px;
   cursor: pointer;
   z-index: 1000;
@@ -684,6 +683,10 @@ input[type="number"] {
       background: $hurricane;
       border-radius: 3px;
 
+      @media (max-width: $screen-sm) {
+        top: 0;
+      }
+
       &:after {
         content: "\F012C";
         font: 15px/19px "Material Design Icons", sans-serif;
@@ -1261,6 +1264,10 @@ input[type="number"] {
     box-shadow: $shadow;
     transform: translateX(100%);
     @include transition(.3s);
+
+    @media (max-width: $screen-sm) {
+      padding: 30px 20px;
+    }
 
     @media (max-width: $screen-xs) {
       width: 100%;

@@ -127,11 +127,15 @@
 .toggle-mask, .toggle-mask2, .toggle-mask3 {
   display: none;
   position: fixed;
-  top: 0;
+  top: 100px;
   right: 0;
   width: 10000px;
   height: 100vh;
   z-index: 1;
+
+  @media (max-width: $screen-md) {
+    top: 52px;
+  }
 }
 
 .menu-wrapper {
@@ -650,10 +654,10 @@
     @include transition(.4s);
     cursor: pointer;
     position: relative;
-    z-index: 2;
+    z-index: 100;
 
     @media (max-width: $screen-lg) {
-      z-index: 100;
+      z-index: 2;
     }
 
     @media (max-width: $screen-sm) {

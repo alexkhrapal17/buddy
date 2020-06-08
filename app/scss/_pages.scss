@@ -585,7 +585,7 @@
   }
 
   @media (max-width: $screen-sm) {
-    padding: 45px 15px 30px;
+    padding: 45px 15px;
     margin-bottom: 35px;
 
     .d-flex {
@@ -621,6 +621,10 @@
   @media (max-width: $screen-lg) {
     flex: none;
     width: 360px;
+  }
+
+  @media (max-width: $screen-sm) {
+    width: 100%;
   }
 }
 
