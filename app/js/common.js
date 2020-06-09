@@ -119,6 +119,7 @@ $(function () {
     // Selects
     $('.select-lang').selectric();
     $('.select-bottle').selectric();
+    $('.filter-select').selectric();
     $('.select-city').selectric({
         maxHeight: 400
     });

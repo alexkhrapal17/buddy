@@ -1011,6 +1011,30 @@
   }
 }
 
+.filters-bottom {
+  @media (max-width: $screen-sm) {
+    overflow: auto;
+    margin: 0 -15px;
+  }
+
+  .filters-bottom-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: $screen-sm) {
+      width: 1000px;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+
+    .filter-select-wrapper {
+      margin: 10px;
+    }
+  }
+}
+
 .filter-checkbox {
   input {
     display: none;

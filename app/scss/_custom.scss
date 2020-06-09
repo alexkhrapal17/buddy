@@ -100,8 +100,14 @@ input[type="number"]::-webkit-outer-spin-button {
   appearance: none;
   margin: 0;
 }
+
 input[type="number"] {
   -moz-appearance: textfield;
+}
+
+input, textarea {
+  border-radius: 0;
+  -webkit-appearance: none;
 }
 
 .outer-wrapper {
@@ -164,7 +170,7 @@ input[type="number"] {
 
   .mdi {
     font-size: 25px;
-    line-height: 30px;
+    line-height: 25px;
     color: $hurricane;
     margin-right: 15px;
   }
@@ -422,6 +428,7 @@ input[type="number"] {
       width: 100px !important;
     }
   }
+
   &.selectric-select-city {
     .selectric-items {
       width: 230px !important;
@@ -451,6 +458,97 @@ input[type="number"] {
           right: -30px;
         }
       }
+    }
+  }
+
+  &.selectric-filter-select {
+    border-radius: 8px;
+    background: $medium-carmine;
+    padding: 0 13px;
+
+    &.selectric-open {
+      background: $gin-fizz;
+
+      .selectric {
+        .label {
+          color: $rock;
+        }
+
+        .button {
+          &:after {
+            border-top-color: $rock;
+          }
+        }
+      }
+    }
+
+    .selectric-items ul li {
+      position: relative;
+      padding-left: 55px;
+      padding-bottom: 15px;
+      text-transform: initial;
+
+      &:first-child {
+        display: none;
+      }
+
+      &.selected {
+        &:before {
+          opacity: 0;
+          visibility: hidden;
+        }
+
+        &:after {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      &:before {
+        content: "";
+        display: block;
+        width: 18px;
+        height: 18px;
+        border-radius: 3px;
+        border: 2px solid $rock;
+        position: absolute;
+        top: 0;
+        left: 25px;
+        @include transition(.2s);
+      }
+
+      &:after {
+        content: "\F012C";
+        font: 20px/20px "Material Design Icons", sans-serif;
+        color: $medium-carmine;
+        position: absolute;
+        top: 0;
+        left: 25px;
+        opacity: 0;
+        visibility: hidden;
+        @include transition(.2s);
+      }
+    }
+
+    .selectric {
+      .label {
+        margin: 0 45px 0 0;
+        color: $ripe-lemon;
+      }
+
+      .button {
+        &:after {
+          border-top-color: $ripe-lemon;
+        }
+      }
+    }
+
+    .selectric-items {
+      left: 0;
+      width: 140px !important;
+      background: $gin-fizz;
+      box-shadow: none;
+      border-radius: 8px;
     }
   }
 
