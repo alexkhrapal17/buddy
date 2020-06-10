@@ -612,7 +612,7 @@ input, textarea {
   border-radius: 0 0 8px 8px;
   background: $ripe-lemon;
   box-shadow: $shadow;
-  z-index: 100;
+  z-index: 1001;
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
@@ -933,6 +933,7 @@ input, textarea {
   }
 
   .product-card {
+    display: block;
     width: calc(25% - 30px);
     height: 100%;
     margin: 15px;

@@ -757,6 +757,11 @@
         border-bottom: none;
       }
 
+      .dropdown-list {
+        border-radius: 8px;
+        background: $gin-fizz;
+      }
+
       &:hover {
         .dropdown-list {
           opacity: 1;
